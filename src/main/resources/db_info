@@ -1,0 +1,4 @@
+jdbc:oracle:thin:@localhost:1521:orcl
+oracle.jdbc.driver.OracleDriver
+c##mike
+ziggy

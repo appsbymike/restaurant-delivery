@@ -1,0 +1,10 @@
+description,username,password,firstname,lastname,gender,address,phone,email,expected
+Valid credentials; user created,mike2,mike,Mike,Mike,m,23 Mars Place,1234567890,mike@mike.com,1
+"Username, too long",aaaaaaaaaaaaaaaaaaaaa,mike,Mike,Mike,m,23 Mars Place,1234567890,mike@mike.com,0
+Password too long,mike4,aaaaaaaaaaaaaaaaaaaaa,Mike,Mike,m,23 Mars Place,1234567890,mike@mike.com,0
+Firstname too long,mike5,mike,aaaaaaaaaaaaaaaaaaaaa,Mike,m,24 Mars Place,1234567890,mike@mike.com,0
+Lastname too long,mike6,mike,Mike,aaaaaaaaaaaaaaaaaaaaa,m,25 Mars Place,1234567890,mike@mike.com,0
+Gender more than 1 char,mike7,mike,Mike,Mike,mm,26 Mars Place,1234567890,mike@mike.com,0
+Address too long,mike8,mike,Mike,Mike,m,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,1234567890,mike@mike.com,0
+Phone non-numeric,mike9,mike,Mike,Mike,m,23 Mars Place,abcdefghij,mike@mike.com,0
+Email too long,mike10,mike,Mike,Mike,m,23 Mars Place,23 Mars Place,aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com,0

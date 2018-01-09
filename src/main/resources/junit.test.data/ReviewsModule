@@ -1,0 +1,20 @@
+GETITEM,Getting Item; ID valid,1,,,TRUE
+GETITEM,Getting Item; ID empty,,,,FALSE
+GETITEM,Getting Item; ID doesn’t exist,777,,,FALSE
+GETITEM,Getting Item; ID non-numeric,abc,,,FALSE
+GETITEM,Getting Item; ID too long,111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,,,FALSE
+GETREVIEW,Getting Reviews; ID valid,1,,,TRUE
+GETREVIEW,Getting Reviews; ID empty,,,,FALSE
+GETREVIEW,Getting Reviews; ID doesn’t exist,777,,,FALSE
+GETREVIEW,Getting Reviews; ID non-numeric,abc,,,FALSE
+GETREVIEW,Getting Reviews; ID too long,111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,,,FALSE
+SUBMITREVIEW,Submitting Reviews; valid,1,1,very good,TRUE
+SUBMITREVIEW,Submitting Reviews; itemID empty,,1,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; itemID doesn’t exist,777,1,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; itemID non-numeric,abc,1,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; itemID too long,111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,1,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; userID empty,1,,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; userID doesn’t exist,1,777,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; userID non-numeric,1,abc,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; userID too long,1,111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,very good,FALSE
+SUBMITREVIEW,Submitting Reviews; text too long,1,1,very goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery goodvery good,FALSE

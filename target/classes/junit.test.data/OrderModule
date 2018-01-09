@@ -1,0 +1,7 @@
+Valid info,1234567890,123,12345,true
+Invalid cc number (letters),a234567890,123,12345,false
+Invalid cc number (special characters),123$56.890,123,12345,false
+Invalid sec number (letters),1234567890,a23,12345,false
+Invalid sec number (special characters),1234567890,!23,12345,false
+Invalid zipcode (letters),1234567890,123,123d5,false
+Invalid zipcode (special characters),1234567890,123,!@.45,false

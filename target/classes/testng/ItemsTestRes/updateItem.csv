@@ -1,0 +1,4 @@
+description,name,desc,price,image,active,category,id,expected
+Valid info,Plain Pizza,Testaroo,3.5,Images/ayy.png,1,Pizza,1,TRUE
+Price not a number,Plain Pizza,Testaroo,Tree Fiddy,Images/ayy.png,1,Pizza,1,FALSE
+Active not a number,Plain Pizza,Testaroo,3.5,Images/ayy.png,yes,Pizza,1,FALSE

@@ -1,0 +1,6 @@
+description,username,password,expected
+Valid Normal Login Creds,mike,mike,3
+Invalid username,abcd1234,mike,null
+Invalid password,mike,abcd1234,null
+Invalid username (too long),abcdefghijklmnopqrstuvwxyz,mike,null
+Invalid password (too long),mike,abcdefghijklmnopqrstuvwxyz,null

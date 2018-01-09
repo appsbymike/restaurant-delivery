@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[Testing CASE01: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Testing CASE02: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Testing CASE03: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Testing CASE04: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Testing CASE05: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Testing CASE06: ]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed.]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30149" started-at="2018-01-08T19:45:31Z" finished-at="2018-01-08T19:46:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30149" started-at="2018-01-08T19:45:31Z" finished-at="2018-01-08T19:46:01Z">
+      <class name="selenium.LoginPageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="3638" started-at="2018-01-08T14:45:31Z" finished-at="2018-01-08T14:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="617" started-at="2018-01-08T14:45:35Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE01: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidField -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="629" started-at="2018-01-08T14:45:35Z" finished-at="2018-01-08T14:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE01: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2808" started-at="2018-01-08T14:45:36Z" finished-at="2018-01-08T14:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="647" started-at="2018-01-08T14:45:39Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[$123##123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE02: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidField -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="617" started-at="2018-01-08T14:45:39Z" finished-at="2018-01-08T14:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE02: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2923" started-at="2018-01-08T14:45:40Z" finished-at="2018-01-08T14:45:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="631" started-at="2018-01-08T14:45:43Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[missing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE03: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidField -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="616" started-at="2018-01-08T14:45:44Z" finished-at="2018-01-08T14:45:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE03: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2792" started-at="2018-01-08T14:45:44Z" finished-at="2018-01-08T14:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="617" started-at="2018-01-08T14:45:47Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[missing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE04: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidField -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="614" started-at="2018-01-08T14:45:48Z" finished-at="2018-01-08T14:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE04: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2821" started-at="2018-01-08T14:45:48Z" finished-at="2018-01-08T14:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="login" duration-ms="669" started-at="2018-01-08T14:45:51Z" data-provider="loginData" finished-at="2018-01-08T14:45:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE05: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="807" started-at="2018-01-08T14:45:52Z" finished-at="2018-01-08T14:45:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE05: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="3001" started-at="2018-01-08T14:45:53Z" finished-at="2018-01-08T14:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="login" duration-ms="558" started-at="2018-01-08T14:45:56Z" data-provider="loginData" finished-at="2018-01-08T14:45:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CASE06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dasdsad]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Testing CASE06: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="625" started-at="2018-01-08T14:45:56Z" finished-at="2018-01-08T14:45:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE06: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2967" started-at="2018-01-08T14:45:57Z" finished-at="2018-01-08T14:46:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginAsAdmin()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="loginAsAdmin" duration-ms="825" started-at="2018-01-08T14:46:00Z" finished-at="2018-01-08T14:46:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsAdmin -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="690" started-at="2018-01-08T14:46:01Z" finished-at="2018-01-08T14:46:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginAsAdmin status=SUCCESS method=LoginPageTest.loginAsAdmin()[pri:0, instance:selenium.LoginPageTest@3f49dace] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- selenium.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

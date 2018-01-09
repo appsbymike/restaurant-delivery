@@ -1,0 +1,2 @@
+description,user_id,store_id,cc_number,sec_number,zipcode,pretax_revenue,tax_revenue,expected
+Valid,1,1,1111111111,1234,11111,11.11,1,TRUE

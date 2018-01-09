@@ -1,0 +1,2 @@
+description,itemID,expected,image,name,desc,price
+Valid,1,TRUE,Images/item1.jpg,Plain Pie,A delicious classic that you should buy right now because reasons,    $13.50

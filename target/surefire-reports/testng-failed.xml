@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="testng.ItemsTest">
+        <methods>
+          <include name="getCartItemsTest" invocation-numbers="0"/>
+          <include name="getAllActiveItemsTest"/>
+          <include name="After"/>
+          <include name="addItemTest" invocation-numbers="0"/>
+          <include name="before"/>
+          <include name="getTotalsTest" invocation-numbers="0 1 2"/>
+          <include name="getItemsCountTest"/>
+          <include name="updateItemTest" invocation-numbers="0 1 2"/>
+          <include name="getAllItemsTest"/>
+        </methods>
+      </class> <!-- testng.ItemsTest -->
+      <class name="testng.ReviewsTest">
+        <methods>
+          <include name="getItemInfoTest" invocation-numbers="0"/>
+          <include name="getReviewsByUserTest" invocation-numbers="0"/>
+          <include name="after"/>
+          <include name="submitReviewTest" invocation-numbers="0"/>
+          <include name="before"/>
+          <include name="getPastReviewsTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng.ReviewsTest -->
+      <class name="testng.ReceiptsTest">
+        <methods>
+          <include name="getReceiptItemsTest" invocation-numbers="1"/>
+          <include name="getReceiptSummaryTest" invocation-numbers="0"/>
+          <include name="validateUserTest" invocation-numbers="0"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- testng.ReceiptsTest -->
+      <class name="testng.UsersTest">
+        <methods>
+          <include name="after"/>
+          <include name="getDetailsTest" invocation-numbers="0"/>
+          <include name="updateUserTest" invocation-numbers="0"/>
+          <include name="registerQueryTest" invocation-numbers="0 1 2"/>
+          <include name="createUserTest" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="before"/>
+          <include name="loginQueryTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng.UsersTest -->
+      <class name="testng.OrdersTest">
+        <methods>
+          <include name="addItemToOrderTest" invocation-numbers="0"/>
+          <include name="after"/>
+          <include name="getOrdersByUserTest" invocation-numbers="0"/>
+          <include name="getAllOrdersTest"/>
+          <include name="before"/>
+          <include name="createOrderTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng.OrdersTest -->
+      <class name="testng.StoresTest">
+        <methods>
+          <include name="createStoreTest" invocation-numbers="0"/>
+          <include name="before"/>
+          <include name="updateStoreTest" invocation-numbers="0"/>
+          <include name="getAllStoresTest"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- testng.StoresTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
