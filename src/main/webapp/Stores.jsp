@@ -38,7 +38,7 @@
 	  
 	  <%-- Loop through each Store in the ArrayList --%>
 	  <c:forEach items="${storeList}" var="store">
-	  	<div class ="container theme-showcase">
+	  	<div class ="container theme-showcase" id="location">
 		  	<div class="jumbotron">
 		  		<div class="row align-items-center" style="position: relative;">
 		  			<div class="col-sm-6" style="overflow: auto">

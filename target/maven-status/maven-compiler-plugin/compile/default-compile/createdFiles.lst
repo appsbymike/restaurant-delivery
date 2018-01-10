@@ -13,6 +13,7 @@ del\res\dao\ReceiptsDAO.class
 del\res\servlets\PaymentInfo.class
 del\res\models\PastReview.class
 del\res\servlets\Stores.class
+del\res\utilities\GetPath.class
 del\res\servlets\PastOrders.class
 del\res\dao\ItemsDAO.class
 del\res\models\Picture.class

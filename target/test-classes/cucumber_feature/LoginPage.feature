@@ -26,27 +26,3 @@ Scenario: Log In with Admin Credentials.
 	When User Navigates to Login Page
 	And User enters Valid Admin Credentials
 	Then User is sent to Admin Home Page
-
-#------------ Out of Scope -------------#
-	
-#Scenario Outline: Log In with Invalid Credentials.
-#	Given User is on Home Page
-#	When User Navigates to Login Page
-#	And User enters Username <username> and Password <password>
-#	Then User sees Invalid Credentials Message for <field>
-#	
-#	Examples:
-#		|username  |password    |field       |
-#		|$mike     |mike        |username    |
-#		|mike      |$@$#!@#     |password    |
-#		
-#Scenario Outline: Log In with Missing Credentials.
-#	Given User is on Home Page
-#	When User Navigates to Login Page
-#	And User enters Missing Username <username> or Password <password>
-#	Then User sees Missing Credentials Message for <field>
-#	
-#	Examples:
-#		|username  |password    |field       |
-#		|          |mike        |username    |
-#		|mike      |            |password    |
