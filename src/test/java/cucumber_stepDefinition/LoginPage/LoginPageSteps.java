@@ -47,12 +47,12 @@ public class LoginPageSteps {
 	
 	@Then("^User sees Login Page Header$")
 	public void user_sees_Login_Page_Header() {
-		assertThat(driver.getTitle(), IsEqual.equalTo(Strings.loginHeader));
+		assertThat(driver.getTitle(), IsEqual.equalTo(Strings.LoginHeader));
 	}
 	
 	@Then("^User is sent to Menu Page$")
 	public void user_is_sent_to_Menu_Page() {
-		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.menuPage));
+		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.MenuPage));
 	}
 	
 	@Then("^User sees Invalid Credentials Message for (.*)$")

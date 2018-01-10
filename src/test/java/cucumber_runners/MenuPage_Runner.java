@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/java/cucumber_feature/MenuPage.feature",
 		glue="cucumber_stepDefinition.MenuPage",
-		format= {"pretty","html:target/CucumberReports/MenuPage"}
+		plugin={"pretty","html:target/CucumberReports/MenuPage","junit:target/CucumberReports/MenuPage/junit.xml"}
 		)
 public class MenuPage_Runner {
 

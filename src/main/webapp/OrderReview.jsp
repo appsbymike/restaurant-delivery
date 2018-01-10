@@ -45,20 +45,20 @@
 	    
 	    <%-- Loop through each item in the cart --%>
 		<c:forEach items="${cart}" var="item">
-			<div class ="container theme-showcase">
+			<div class ="container theme-showcase" id="cart-item">
 			  	<div class="jumbotron">
 			  		<div class="row align-items-center" style="position: relative;">
 			  			<div class="col-sm-6" style="overflow: auto">
-			  				<img src="${context}${item.getImageSrc()}" class="img-responsive img-thumbnail">
+			  				<img src="${context}${item.getImageSrc()}" class="img-responsive img-thumbnail" id="item-img">
 			  			</div>
 			  			<div class="col-sm-6">
 			  				<div class="jumbotron" style="position:absolute;top:50%; transform: translate(0%,-50%); background-color:transparent; text-align: center; width: 100%">
-			  					<h2>${item.getItemName()}</h2>
+			  					<h2 id="item-name">${item.getItemName()}</h2>
 			  					<br>
-			  					<h3>${item.getItemPrice()}</h3>
+			  					<h3 id="item-price">${item.getItemPrice()}</h3>
 			  					<br><br>
 			  					<form method="post" action="${context}ReviewOrder">
-				  					<button class="btn btn-danger btn-block" type="submit" name="remove" value="${item.getItemID()}">Remove</button>
+				  					<button class="btn btn-danger btn-block" type="submit" name="remove" value="${item.getItemID()}" id="item-remove">Remove</button>
 			  					</form>
 			  				</div>
 			  			</div>

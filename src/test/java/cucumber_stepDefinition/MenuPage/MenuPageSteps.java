@@ -64,7 +64,7 @@ public class MenuPageSteps {
 	@Then("^User is sent to Locations Page$")
 	public void user_is_sent_to_Locations_Page() throws InterruptedException {
 		Thread.sleep(200);
-		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.locationsPage));
+		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.LocationsPage));
 	}
 	
 	@After

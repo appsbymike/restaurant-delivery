@@ -76,12 +76,12 @@ public class RegistrationPageSteps {
 	
 	@Then("^User sees Registration Page Header$")
 	public void user_Registration_Page_Header() {
-		assertThat(driver.getTitle(), IsEqual.equalTo(Strings.registrationHeader));
+		assertThat(driver.getTitle(), IsEqual.equalTo(Strings.RegistrationHeader));
 	}
 	
 	@Then("^User is redirected to Login Page$")
 	public void user_is_redirected_to_Login_Page() {
-		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.loginPage));
+		assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.LoginPage));
 	}
 	
 	@After

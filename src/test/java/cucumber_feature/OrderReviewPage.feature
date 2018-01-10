@@ -24,7 +24,7 @@ Scenario: Each item has image, name and price
 	Given User has multiple items in their Cart
 	When User selects a location
 	And User cancels their purchase
-	Then User is sent to Menu Page
+	Then User is sent back to Menu Page
 
 #Requirement #5: After clicking on delete, user should be sent back to Review Order page
 Scenario: Each item has image, name and price

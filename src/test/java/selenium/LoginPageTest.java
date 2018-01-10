@@ -40,7 +40,7 @@ public class LoginPageTest {
 	@BeforeMethod
 	public void before() {
 		CreateWebDriver createWebDriver = new CreateWebDriver();
-		driver = createWebDriver.createChromeDriver(Strings.loginPage);
+		driver = createWebDriver.createChromeDriver(Strings.LoginPage);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		txtUsername = driver.findElement(By.id("username"));
 		txtPassword = driver.findElement(By.id("password"));
@@ -66,7 +66,7 @@ public class LoginPageTest {
 		
 		if(expected) {
 			loggedIn = true;
-			assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.menuPage));
+			assertThat(driver.getCurrentUrl(), IsEqual.equalTo(Strings.MenuPage));
 		}
 		else {
 			String failText = driver.findElement(By.id("invalid")).getText();

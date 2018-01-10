@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/java/cucumber_feature/RegistrationPage.feature",
 		glue="cucumber_stepDefinition.RegistrationPage",
-		format= {"pretty","html:target/CucumberReports/RegistrationPage"}
+		plugin= {"pretty","html:target/CucumberReports/RegistrationPage","junit:target/CucumberReports/RegistrationPage/junit.xml"}
 		)
 public class RegistrationPage_Runner {
 
