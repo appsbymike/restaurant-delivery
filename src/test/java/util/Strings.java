@@ -9,6 +9,10 @@ public class Strings {
 	public static String loginPage = htmlRoot + "Login.jsp";
 	public static String loginHeader = "Restaurant Delivery";
 	
+	public static String registrationHeader = "User Details";
+	
+	public static String locationsPage = htmlRoot + "Stores.jsp";
+	
 	public static String menuPage = htmlRoot + "Menu.jsp";
 	public static String errorPage = htmlRoot + "Error.jsp";
 }
