@@ -1,0 +1,8 @@
+description,password,firstname,lastname,address,phone,email,userID,expected
+Valid credentials; user updated,test,Mike,Mike,23 Mars Place,1234567890,mike@mike.com,2,1
+Password too long,aaaaaaaaaaaaaaaaaaaaa,Mike,Mike,23 Mars Place,1234567890,mike@mike.com,2,0
+Firstname too long,test,aaaaaaaaaaaaaaaaaaaaa,Mike,23 Mars Place,1234567890,mike@mike.com,2,0
+Lastname too long,test,Mike,aaaaaaaaaaaaaaaaaaaaa,23 Mars Place,1234567890,mike@mike.com,2,0
+Address too long,test,Mike,Mike,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,1234567890,mike@mike.com,2,0
+Phone non-numeric,test,Mike,Mike,23 Mars Place,abcdefghij,mike@mike.com,2,0
+Email too long,test,Mike,Mike,23 Mars Place,23 Mars Place,aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com,2,0

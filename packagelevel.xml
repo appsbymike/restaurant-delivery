@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PackageLevel">
+	<test name="testcases">
+		<groups>
+			<run>
+				<include name="Stuff"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="testng"/>
+		</packages>
+	</test>
+</suite>

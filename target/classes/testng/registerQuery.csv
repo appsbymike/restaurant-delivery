@@ -1,0 +1,4 @@
+description,username,expected
+Username Exists,mike,TRUE
+Username Doesn't Exist,mike9001,FALSE
+Username Too Long,aaaaaaaaaaaaaaaaaaaaa,FALSE
