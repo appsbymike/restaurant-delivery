@@ -44,6 +44,6 @@ To set up the database, just run the database_setup.sql in SQL Developer. You ma
 
 After that, make sure you configure Tomcat to work with your IDE and assign the Tomcat Runtime v9.0 to this project.
 
-At the point, you should be good to go!
+At that point, you should be good to go!
 
 >should
