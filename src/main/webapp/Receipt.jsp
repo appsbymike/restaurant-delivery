@@ -35,14 +35,14 @@
     			
     			<%-- Start here for stacking vertically on left side --%>
     			<c:forEach items="${receipt}" var="item">
-    				<div class="row align-items-center" style="position: relative; margin:10px 0px">
+    				<div class="row align-items-center" style="position: relative; margin:10px 0px" id="item">
     					<div class="col-sm-6" style="overflow: auto">
-    						<img src="${context}${item.getImageSrc()}" class="img-responsive img-thumbnail"/>
+    						<img src="${context}${item.getImageSrc()}" class="img-responsive img-thumbnail" id="item-img"/>
     					</div>
     					<div class="col-sm-6">
-    						<h2>${item.getItemName()}</h2>
+    						<h2 id="item-name">${item.getItemName()}</h2>
     						<br>
-    						<h3>Price: ${item.getItemPrice()} </h3>
+    						<h3 id="item-price">Price: ${item.getItemPrice()} </h3>
     					</div>    					
     				</div>
     			</c:forEach>

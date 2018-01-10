@@ -46,6 +46,4 @@ After that, make sure you configure Tomcat to work with your IDE and assign the 
 
 At the point, you should be good to go!
 
->Should
-
-##
+>should

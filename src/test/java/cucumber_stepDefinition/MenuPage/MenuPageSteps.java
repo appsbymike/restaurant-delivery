@@ -21,12 +21,12 @@ public class MenuPageSteps {
 	@Given("^User is logged in$")
 	public void user_is_logged_in() {
 		CreateWebDriver createWebDriver = new CreateWebDriver();
-		String URL = "http://localhost/RestaurantDelivery-MichaelGabriel-Maven/";
-		driver = createWebDriver.createChromeDriver(URL);
+		driver = createWebDriver.createChromeDriver(Strings.htmlRoot);
 		driver.findElement(By.id("hdLogin")).click();
 		driver.findElement(By.id("username")).sendKeys("mike");
 		driver.findElement(By.id("password")).sendKeys("mike");
 		driver.findElement(By.id("login")).click();
+		driver.get(Strings.ReceiptPage);
 	}
 	
 	@When("^User navigates to Menu Page$")

@@ -22,8 +22,7 @@ public class LoginPageSteps {
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() {
 		CreateWebDriver createWebDriver = new CreateWebDriver();
-		String URL = "http://localhost/RestaurantDelivery-MichaelGabriel-Maven/";
-		driver = createWebDriver.createChromeDriver(URL);
+		driver = createWebDriver.createChromeDriver(Strings.htmlRoot);
 	}
 	
 	@When("^User Navigates to Login Page$")

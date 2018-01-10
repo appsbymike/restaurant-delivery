@@ -1,5 +1,4 @@
 Pages Not Done:
--Review Item Page
 -Edit User Page
 -Admin Account Page
 -Admin User List Page
@@ -14,3 +13,5 @@ Pages Done:
 -Location Page
 -Order Review Page
 -Payment Information Page
+-Receipt Page
+-Review Item Page

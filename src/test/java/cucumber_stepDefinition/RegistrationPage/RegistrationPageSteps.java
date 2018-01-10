@@ -33,8 +33,7 @@ public class RegistrationPageSteps {
 	@Given("^User navigated to Registration Page$")
 	public void user_navigates_to_Registration_Page() {
 		CreateWebDriver createWebDriver = new CreateWebDriver();
-		String URL = "http://localhost/RestaurantDelivery-MichaelGabriel-Maven/";
-		driver = createWebDriver.createChromeDriver(URL);
+		driver = createWebDriver.createChromeDriver(Strings.htmlRoot);
 		driver.findElement(By.id("hdRegister")).click();
 	}
 	

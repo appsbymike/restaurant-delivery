@@ -87,7 +87,7 @@
 	  					<%-- Individual review starts here --%>
 		  				<div class="jumbotron" style="text-align: left; padding: 15px; margin-bottom: 1rem">
 		  					<h4>${review.getUsername()} says:</h4>
-		  					<p>${review.getReviewText()}</p>
+		  					<p id="reviewText">${review.getReviewText()}</p>
 		  				</div>
 		  			</c:forEach>
   				</div>
