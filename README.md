@@ -29,12 +29,12 @@ That being said, you can pretty much seperate everything into a few different pi
   - Cucumber + Selenium + JUnit Runner Interface Tests
 
 As for how everything interacts, you can think about it this way:
-1. A user visits our (JSP) login page, enters their login info and clicks "Log In"
-2. A Servlet receives their login info and then passes it to
-3. A JDBC Data Access Object, which uses it to query the database
-4. The results of that query are stored in a Model
-5. The Servlet then sees that Model and either stores it for future use or
-6. Passes that Model to another JSP page to show the user its data
+-A user visits our (JSP) login page, enters their login info and clicks "Log In"
+-A Servlet receives their login info and then passes it to
+-A JDBC Data Access Object, which uses it to query the database
+-The results of that query are stored in a Model
+-The Servlet then sees that Model and either stores it for future use or
+-Passes that Model to another JSP page to show the user its data
 
 ## Setup
 

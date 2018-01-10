@@ -1,0 +1,16 @@
+Pages Not Done:
+-Review Item Page
+-Edit User Page
+-Admin Account Page
+-Admin User List Page
+-Admin Sell Items List Page
+-Admin Location List Page
+-Admin Orders Page
+
+Pages Done:
+-Login Page
+-Registration Page
+-Menu Page
+-Location Page
+-Order Review Page
+-Payment Information Page
