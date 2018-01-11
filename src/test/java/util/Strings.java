@@ -17,6 +17,8 @@ public class Strings {
 	public static String ErrorPage = htmlRoot + "Error.jsp";
 	public static String ReceiptPage = htmlRoot + "Receipt?order_id=3";
 	
+	public static String AdminUserPage = htmlAdminRoot + "adminUserList";
+	
 	
 	public static String LoginHeader = "Restaurant Delivery";
 	public static String RegistrationHeader = "User Details";

@@ -7,10 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/cucumber_feature/",
+		features="src/test/java/cucumber_feature/LogoutPage.feature",
 		glue="cucumber_stepDefinition",
-		plugin= {"pretty","html:target/CucumberReports/AllTests","junit:target/CucumberReports/AllTests/junit.xml"}
+		plugin= {"pretty","html:target/CucumberReports/LogoutPage","junit:target/CucumberReports/LogoutPage/junit.xml"}
 		)
-public class AllTests_Runner {
-
+public class LogoutPage_Runner {
 }

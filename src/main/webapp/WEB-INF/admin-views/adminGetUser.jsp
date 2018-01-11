@@ -44,13 +44,13 @@
 		    	<div class="jumbotron text-center" style="margin:10px 0">
 		    		<h1 style="line-height: 100px">Normal User Account Details</h1>
 					<form:form method="post" action="${context}/admin/adminGetUser">
-					    <form:input path="firstname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="First Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters"/>
-					    <form:input path="lastname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="Last Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters"/>
-					    <form:input path="password" class="form-control input-lg" type="password" pattern="[a-zA-Z0-9]{1,20}" style="font-size:2rem; text-align: center" placeholder="Password" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphanumber Characters"/>
-					    <form:input path="repassword" class="form-control input-lg" type="password" pattern="[a-zA-Z0-9]{1,20}" style="font-size:2rem; text-align: center" placeholder="Re-enter Password" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphanumber Characters"/>
-					    <form:input path="address" class="form-control input-lg" type="text" pattern="[a-zA-Z0-9 .]{1,100}" style="font-size:2rem; text-align: center" placeholder="Address" maxlength="100" required="required" title="Please enter a valid address"/>
-					    <form:input path="phone" class="form-control input-lg" type="text" pattern="[0-9]{10}" style="font-size:2rem; text-align: center" placeholder="Phone Number" maxlength="10" required="required" title="Please enter your 10-digit phone number (no dashes)"/>
-					    <form:input path="email" class="form-control input-lg" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" style="font-size:2rem; text-align: center" placeholder="Email Address" maxlength="40" required="required" title="Please enter a valid email"/>
+					    <form:input path="firstname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="First Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters" id="firstname"/>
+					    <form:input path="lastname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="Last Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters" id="lastname"/>
+					    <form:input path="password" class="form-control input-lg" type="password" pattern="[a-zA-Z0-9]{1,20}" style="font-size:2rem; text-align: center" placeholder="Password" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphanumber Characters" id="password"/>
+					    <form:input path="repassword" class="form-control input-lg" type="password" pattern="[a-zA-Z0-9]{1,20}" style="font-size:2rem; text-align: center" placeholder="Re-enter Password" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphanumber Characters" id="repassword"/>
+					    <form:input path="address" class="form-control input-lg" type="text" pattern="[a-zA-Z0-9 .]{1,100}" style="font-size:2rem; text-align: center" placeholder="Address" maxlength="100" required="required" title="Please enter a valid address" id="address"/>
+					    <form:input path="phone" class="form-control input-lg" type="text" pattern="[0-9]{10}" style="font-size:2rem; text-align: center" placeholder="Phone Number" maxlength="10" required="required" title="Please enter your 10-digit phone number (no dashes)" id="phone"/>
+					    <form:input path="email" class="form-control input-lg" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" style="font-size:2rem; text-align: center" placeholder="Email Address" maxlength="40" required="required" title="Please enter a valid email" id="email"/>
 					    <form:input path="id" hidden="true"/>
 					    <br>
 					    <button class="btn btn-success btn-block" style="font-size: 2rem" type="submit" name="update">Update</button>
@@ -60,7 +60,7 @@
 		    <div class="col-sm-4">
 		    	<c:forEach items="${reviews}" var="review">
 			    	<div class="jumbotron" style="margin:10px 0">
-			    		<form:form method="post" action="${context}/admin/adminGetUser?review_id=${review.getId()}">
+			    		<form:form method="post" action="${context}/admin/adminGetUser?review_id=${review.getId()}" id="reviews">
 			    			<h4>${review.getUsername()} says:</h4>
 			    			<hr>
 			  				<p>${review.getReviewText()}</p>

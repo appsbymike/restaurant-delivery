@@ -16,12 +16,7 @@
 	<div class="jumbotron text-center" >
 		<h1 style="line-height: 100px">Regular User's Info</h1>
 		<c:forEach items="${users}" var="user">
-			<a href="${context}/admin/adminGetUser?id=${user.getId()}">
-			${user.getFirstname()} 
-			${user.getLastname()} 
-			Phone: ${user.getPhone()} 
-			Email: ${user.getEmail()}
-			</a><br>
+			<a href="${context}/admin/adminGetUser?id=${user.getId()}" id="user">${user.getFirstname()} ${user.getLastname()} Phone: ${user.getPhone()} Email: ${user.getEmail()}</a><br>
 		</c:forEach>
     </div>
 </div>

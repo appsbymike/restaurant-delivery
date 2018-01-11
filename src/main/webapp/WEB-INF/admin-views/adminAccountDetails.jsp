@@ -37,7 +37,7 @@
     <div class="jumbotron text-center" >
       <h1 style="line-height: 100px">Admin Account Details</h1>
 
-      <form:form method="post" action="${context}/admin/adminAccountDetails">
+      <form:form method="post" action="${context}/admin/">
         <form:input path="firstname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="First Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters"/>
         <form:input path="lastname" class="form-control input-lg" type="text" pattern="[a-zA-Z]{1,20}" style="font-size:2rem; text-align: center" placeholder="Last Name" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphabetic Characters"/>
         <form:input path="password" class="form-control input-lg" type="password" pattern="[a-zA-Z0-9]{1,20}" style="font-size:2rem; text-align: center" placeholder="Password" maxlength="20" required="required" title="Please enter a combination of up to 20 Alphanumber Characters"/>

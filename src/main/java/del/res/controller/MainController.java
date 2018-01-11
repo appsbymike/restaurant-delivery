@@ -30,13 +30,6 @@ import del.res.utilities.Validator;
 @Controller
 public class MainController {
 	
-	//Admin homepage
-	@RequestMapping(value="/", method=RequestMethod.GET)
-	public ModelAndView adminHome() {
-		ModelAndView model = new ModelAndView("adminHome");
-		return model;
-	}
-	
 	//Admin panel navigation page
 	@RequestMapping(value="adminNavigate", method=RequestMethod.GET)
 	public ModelAndView adminNavigate() {
@@ -115,7 +108,7 @@ public class MainController {
 				String email = info.getEmail();
 				Validator v = new Validator();
 				
-				model = new ModelAndView(("adminGetUser"),"command",info);
+				
 				
 				//Validate user info
 				if(v.isValidUpdate(password, repassword, firstname, lastname, address, phone, email)) {
@@ -125,15 +118,18 @@ public class MainController {
 						UsersDAO usersDAO = new UsersDAO();
 						usersDAO.updateUser(info);
 						//Add attribute to show view that update was successful
-						model.addObject("success", true);
+						model = new ModelAndView("redirect:/admin/adminUserList");
+//						model.addObject("success", true);
 					}
 					else {
 						//Add attribute to show view that password didn't match
+						model = new ModelAndView("adminGetUser","command",info);
 						model.addObject("nomatch",true);
 					}
 				}
 				else {
 					//Add attribute to show view that format was incorrect
+					model = new ModelAndView("adminGetUser","command",info);
 					model.addObject("invalidformat",true);
 				}
 				
@@ -412,7 +408,7 @@ public class MainController {
 	//====================================================================================
 	
 	//Get Admin Account Details
-	@RequestMapping(value="adminAccountDetails", method=RequestMethod.GET)
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public ModelAndView adminUpdateAccountGet() {
 		//Get the current session
 		ServletRequestAttributes request = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
@@ -440,7 +436,7 @@ public class MainController {
 	}
 	
 	//Update admin account details
-	@RequestMapping(value="adminAccountDetails", method=RequestMethod.POST)
+	@RequestMapping(value="/", method=RequestMethod.POST)
 	public ModelAndView adminUpdateAccountPost(
 			@ModelAttribute("SpringWeb") User info) {
 		

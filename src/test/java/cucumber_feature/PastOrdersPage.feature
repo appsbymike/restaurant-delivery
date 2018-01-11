@@ -1,4 +1,3 @@
-
 Feature: View Past Orders
 
 # Requirement #1: Logout option should be available

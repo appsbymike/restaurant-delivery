@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/cucumber_feature/",
+		features="src/test/java/cucumber_feature/AdminUserPage.feature",
 		glue="cucumber_stepDefinition",
-		plugin= {"pretty","html:target/CucumberReports/AllTests","junit:target/CucumberReports/AllTests/junit.xml"}
+		plugin= {"pretty","html:target/CucumberReports/AdminUserPage","junit:target/CucumberReports/AdminUserPage/junit.xml"}
 		)
-public class AllTests_Runner {
+public class AdminUserPage_Runner {
 
 }
