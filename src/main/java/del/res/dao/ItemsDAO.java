@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import del.res.models.Item;
-import del.res.utilities.db_interact;
 
-public class ItemsDAO {
+public class ItemsDAO extends DAO {
 	
 	public  ArrayList<Item> getAllActiveItems(){
+		this.open();
 		String sql = "SELECT "
 				+ "ITEM_PICTURE, "
 				+ "ITEM_NAME, "
@@ -21,7 +21,7 @@ public class ItemsDAO {
 		ArrayList<Item> menu = new ArrayList<Item> ();
 		
 		try {
-			ResultSet rs = db_interact.newDatabase().createStatement().executeQuery(sql);
+			ResultSet rs = conn.createStatement().executeQuery(sql);
 			while(rs.next()) {
 				Item item = new Item();
 				//Individual Item
@@ -33,34 +33,39 @@ public class ItemsDAO {
 				item.setItemIsActive(rs.getString(6));
 				menu.add(item);
 			}
+			this.close();
 			return menu;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 		}		
 	}
 	
 	public int getItemsCount(){
+		this.open();
 		int i = 0;
 		try {
 			String sql = "SELECT COUNT(*)"
 					+ " FROM TP_ITEMS";
-			ResultSet rs = db_interact.newDatabase().createStatement().executeQuery(sql);
+			ResultSet rs = conn.createStatement().executeQuery(sql);
 			rs.next();
 			i=rs.getInt(1);
+			this.close();
 			return i;
 		}
 		catch (Exception e) {
+			this.close();
 			return i;
 		}
 		
 	}
 	
 	public  ArrayList<Item> getCartItems(HashSet<Integer> cart){
+		this.open();
 		ArrayList<Item> items = new ArrayList<Item> ();
 		
-		Connection conn = db_interact.newDatabase();
 		String sql = "SELECT ITEM_PICTURE, ITEM_NAME, TO_CHAR(ITEM_PRICE,'FM$9,999.00'), ITEM_ID FROM TP_ITEMS WHERE ITEM_ID=?";
 		
 		try {
@@ -77,20 +82,21 @@ public class ItemsDAO {
 					items.add(r);
 					ps.close();
 				}
-			conn.close();
+			this.close();
 			return items;
 		
 		}
 		catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 		}
 	}
 	
 	public  ArrayList<Double> getPrices(HashSet<Integer> cartIDs) {
+		this.open();
 		String sql = "SELECT ITEM_PRICE FROM TP_ITEMS WHERE ITEM_ID=?";
-		Connection conn = db_interact.newDatabase();
 		PreparedStatement ps;
 		ArrayList<Double> prices = new ArrayList<Double>();
 		try {
@@ -103,15 +109,18 @@ public class ItemsDAO {
 				}
 				ps.close();
 			}
+			this.close();
 			return prices;
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			this.close();
 			return null;
 		}
 	}
 	
 	public  ArrayList<Item> getAllItems(){
+		this.open();
 		String sql = "SELECT "
 				+ "ITEM_PICTURE, "
 				+ "ITEM_NAME, "
@@ -125,7 +134,7 @@ public class ItemsDAO {
 		ArrayList<Item> menu = new ArrayList<Item> ();
 		
 		try {
-			ResultSet rs = db_interact.newDatabase().createStatement().executeQuery(sql);
+			ResultSet rs = conn.createStatement().executeQuery(sql);
 			while(rs.next()) {
 				Item item = new Item();
 				//Individual Item
@@ -140,16 +149,19 @@ public class ItemsDAO {
 				
 				menu.add(item);
 			}
+			this.close();
 			return menu;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 		}		
 	}
 	
 	//Admin-specific query
 	public boolean updateItem(Item item) {
+		this.open();
 		String sql = "UPDATE TP_ITEMS SET " + 
 				"ITEM_NAME=?, " + 
 				"ITEM_DESC=?, " + 
@@ -159,7 +171,7 @@ public class ItemsDAO {
 				"ITEM_CATEGORY=? " + 
 				"WHERE ITEM_ID=?";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setString(1, item.getItemName());
 			ps.setString(2, item.getItemDesc());
 			ps.setDouble(3, Double.parseDouble(item.getItemPrice()));
@@ -168,11 +180,13 @@ public class ItemsDAO {
 			ps.setString(6, item.getItemCategory());
 			ps.setInt(7, Integer.parseInt(item.getItemID()));
 			int result = ps.executeUpdate();
+			this.close();
 			return (result != 0);
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return false;
 		}
 		
@@ -181,10 +195,11 @@ public class ItemsDAO {
 	
 	//Admin-specific query
 	public int addItem(Item item) {
+		this.open();
 		String sql = "INSERT INTO TP_ITEMS (ITEM_NAME,ITEM_DESC,ITEM_PRICE,ITEM_PICTURE,ITEM_ISACTIVE,ITEM_CATEGORY) VALUES " + 
 				"(?,?,?,?,?,?)";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql,new String[] {"ITEM_ID"});
+			PreparedStatement ps = conn.prepareStatement(sql,new String[] {"ITEM_ID"});
 			ps.setString(1, item.getItemName());
 			ps.setString(2, item.getItemDesc());
 			ps.setDouble(3, Double.parseDouble(item.getItemPrice()));
@@ -197,10 +212,12 @@ public class ItemsDAO {
 			if(rs.next()) {
 				key = rs.getInt(1);
 			}
+			this.close();
 			return key;
 			} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return 0;
 		}
 		
@@ -208,21 +225,25 @@ public class ItemsDAO {
 	
 	//Admin-specific query
 	public boolean removeItem(String itemID) {
+		this.open();
 		String sql = "DELETE FROM TP_ITEMS WHERE ITEM_ID=?";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, Integer.parseInt(itemID));
 			int result = ps.executeUpdate();
+			this.close();
 			return (result != 0);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return false;
 		}
 		
 	}
 	
 	public Item getItemByID(String itemID) {
+		this.open();
 		Item item = new Item();
 		String sql = "SELECT "
 				+ "ITEM_NAME, "
@@ -235,7 +256,7 @@ public class ItemsDAO {
 				+ "FROM TP_ITEMS "
 				+ "WHERE ITEM_ID=?";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, Integer.parseInt(itemID));
 			ResultSet rs = ps.executeQuery();
 			rs.next();
@@ -246,10 +267,12 @@ public class ItemsDAO {
 			item.setItemIsActive(rs.getString(5));
 			item.setItemCategory(rs.getString(6));
 			item.setItemID(rs.getString(7));
+			this.close();
 			return item;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 		}
 	}

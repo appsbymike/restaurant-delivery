@@ -34,7 +34,6 @@ public class ItemsBO {
 			totals.add(postTax);
 			
 			return totals;
-			
 	}
 					
 	

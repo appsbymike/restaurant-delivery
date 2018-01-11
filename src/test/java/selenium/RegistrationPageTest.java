@@ -1,5 +1,5 @@
-package selenium;
-
-public class RegistrationPageTest {
-	
-}
+//package selenium;
+//
+//public class RegistrationPageTest {
+//	
+//}

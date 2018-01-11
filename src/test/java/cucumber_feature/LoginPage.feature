@@ -14,6 +14,7 @@ Scenario: Validate Login Page Header
 	Then User sees Login Page Header
 
 #Login Module Requirements #3 & #5
+
 Scenario: Log In with Valid Credentials.
 	Given User is on Home Page
 	When User Navigates to Login Page
@@ -21,6 +22,7 @@ Scenario: Log In with Valid Credentials.
 	Then User is sent to Menu Page
 
 #Login Module Requirements #3 & #5
+
 Scenario: Log In with Admin Credentials.
 	Given User is on Home Page
 	When User Navigates to Login Page

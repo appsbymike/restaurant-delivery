@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/java/cucumber_feature/LocationPage.feature",
-		glue="cucumber_stepDefinition.LocationPage",
+		glue="cucumber_stepDefinition",
 		plugin= {"pretty","html:target/CucumberReports/LocationPage","junit:target/CucumberReports/LocationPage/junit.xml"}
 		)
 public class LocationPage_Runner {

@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/cucumber_feature/ReceiptPage.feature",
+		features="src/test/java/cucumber_feature/PastOrdersPage.feature",
 		glue="cucumber_stepDefinition",
-		plugin= {"pretty","html:target/CucumberReports/ReceiptPage","junit:target/CucumberReports/ReceiptPage/junit.xml"}
+		plugin= {"pretty","html:target/CucumberReports/PastOrdersPage","junit:target/CucumberReports/PastOrdersPage/junit.xml"}
 		)
-public class ReceiptPage_Runner {
+public class PastOrdersPage_Runner {
 
 }

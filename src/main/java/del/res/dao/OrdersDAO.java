@@ -6,18 +6,18 @@ import java.util.ArrayList;
 import del.res.models.Item;
 import del.res.models.PastOrder;
 import del.res.models.ReceiptSummary;
-import del.res.utilities.db_interact;
 
-public class OrdersDAO {
+public class OrdersDAO extends DAO {
 	
 	//Tested in OrderModule
 	public int createOrder(String user_id, String store_id, String cc_number, String sec_number, String zipcode, String pretax_revenue, String tax_revenue){
+		this.open();
 		int key = 0;
 		System.out.println("User ID: " + user_id + "\nStore ID: " + store_id + "\nCC Number: " + cc_number + "\nSecurity Number: " + sec_number + "\nZipcode: " + zipcode + "\nPretax Revenue: " + pretax_revenue + "\nTax Revenue: " + tax_revenue);
 		String sql = "INSERT INTO TP_ORDERS (user_id,store_id,order_cc_number,order_sec_number,order_zipcode,order_pretax_revenue,order_tax_revenue) "
 				+ "VALUES (?,?,?,?,?,?,?)";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql,new String[] {"ORDER_ID"});
+			PreparedStatement ps = conn.prepareStatement(sql,new String[] {"ORDER_ID"});
 			ps.setInt(1,Integer.parseInt(user_id));
 			ps.setInt(2,Integer.parseInt(store_id));
 			ps.setInt(3,Integer.parseInt(cc_number));
@@ -32,27 +32,33 @@ public class OrdersDAO {
 			if(rs.next()) {
 				key = rs.getInt(1);
 			}
+			this.close();
 			return key;
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			this.close();
 			return 0;
 		}
 		
 	}
 	
 	public int addItemToOrder(int orderID, int itemID) throws SQLException, Exception {
+		this.open();
 		String sql = "INSERT INTO TP_ORDER_ITEMS VALUES (?,?)";
-		PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setInt(1, orderID);
 		ps.setInt(2, itemID);
 		System.out.println("Creating Order Item with following info: --------------------------------------------------");
 		System.out.println(sql);
 		System.out.println("-------------------------------------------------------------------------------------------");
-		return ps.executeUpdate();
+		int result = ps.executeUpdate();
+		this.close();
+		return result;
 	}
 	
 	public ArrayList<PastOrder> getOrdersByUser(int userID){
+		this.open();
 		//Define sql queries to use
 		String sql = "SELECT ORDER_ID FROM TP_ORDERS WHERE USER_ID=? ORDER BY ORDER_ID DESC";
 		String itemsSQL = "SELECT ITEM_PICTURE, TO_CHAR(ITEM_PRICE,'$9,999.99'), ITEM_NAME " + 
@@ -65,8 +71,6 @@ public class OrdersDAO {
 		
 		//Define model for results to be placed in
 		ArrayList<PastOrder> orders = new ArrayList<PastOrder>();
-		//Create connection to be used
-		Connection conn = db_interact.newDatabase();
 		try {
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, userID);
@@ -118,11 +122,13 @@ public class OrdersDAO {
 				}
 				
 			}
+			this.close();
 			return orders;
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 			
 		}
@@ -130,12 +136,13 @@ public class OrdersDAO {
 	
 	//Admin-specific query
 	public ArrayList<ReceiptSummary> getAllOrders(){
+		this.open();
 		ArrayList<ReceiptSummary> list = new ArrayList<ReceiptSummary>();
 		String sql = "SELECT COUNT(ITEM_ID), TO_CHAR((ORDER_PRETAX_REVENUE + ORDER_TAX_REVENUE),'FM$9,999.00'), TP_ORDERS.ORDER_ID FROM TP_ORDERS INNER JOIN TP_ORDER_ITEMS ON TP_ORDERS.ORDER_ID=TP_ORDER_ITEMS.ORDER_ID\r\n" + 
 				"GROUP BY TP_ORDERS.ORDER_ID, (ORDER_PRETAX_REVENUE + ORDER_TAX_REVENUE), (ORDER_PRETAX_REVENUE,ORDER_TAX_REVENUE)\r\n" + 
 				"ORDER BY TP_ORDERS.ORDER_ID ";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()) {
 				ReceiptSummary summary = new ReceiptSummary();
@@ -145,11 +152,13 @@ public class OrdersDAO {
 				
 				list.add(summary);
 			}
-			
+
+			this.close();
 			return list;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return null;
 		}
 		
@@ -157,36 +166,43 @@ public class OrdersDAO {
 	
 	//Test-specific query
 	public boolean removeOrder(String orderID) {
+		this.open();
 		String sql = "DELETE FROM TP_ORDERS WHERE ORDER_ID=?";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, Integer.parseInt(orderID));
 			int results = ps.executeUpdate();
 			if(results == 0) {
+				this.close();
 				return false;
 			}
 			else {
+				this.close();
 				return true;
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return false;
 		}
 		
 	}
 	
 	public boolean removeOrderItem(int orderID, int itemID) {
+		this.open();
 		String sql = "DELETE FROM TP_ORDER_ITEMS WHERE ORDER_ID=? AND ITEM_ID=?";
 		try {
-			PreparedStatement ps = db_interact.newDatabase().prepareStatement(sql);
+			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, orderID);
 			ps.setInt(2, itemID);
 			int results = ps.executeUpdate();
+			this.close();
 			return (results != 0);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			this.close();
 			return false;
 		}
 	}

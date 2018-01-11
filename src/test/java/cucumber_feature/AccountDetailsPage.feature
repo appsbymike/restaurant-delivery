@@ -2,14 +2,20 @@ Feature: Account Details
 
 #Requirement #1: Logout option should be available
 #Requirement #3: There should be a link to all orders the user has made
+
+
 Scenario: Links
-	Given User is viewing their Account Details
-	Then User sees Logout and Past Orders links
+	Given User is logged in
+	When User navigates to the Account Details Page
+	Then User sees Logout Button
+	And User sees Past Orders Button
 
 #Requirement #2: All fields are mandatory
+
 Scenario Outline: All fields are mandatory
-	Given User is viewing their Account Details
-	When User enters data <firstname>,<lastname>,<password>,<repassword>,<address>,<phone>,<email>
+	Given User is logged in
+	When User navigates to the Account Details Page
+	And User enters data <firstname>,<lastname>,<password>,<repassword>,<address>,<phone>,<email>
 	Then User sees empty field message for <field>
 
 	Examples:

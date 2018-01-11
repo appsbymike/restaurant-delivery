@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/java/cucumber_feature/LoginPage.feature",
-		glue="cucumber_stepDefinition.LoginPage",
+		glue="cucumber_stepDefinition",
 		plugin= {"pretty","html:target/CucumberReports/LoginPage","junit:target/CucumberReports/LoginPage/junit.xml"}
 		)
 public class LoginPage_Runner {
