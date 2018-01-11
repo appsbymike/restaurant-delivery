@@ -71,7 +71,7 @@
 				<c:forEach items="${locations}" var="location" >
 					<div class="jumbotron" style="margin:10px 0">
 				    	<h1 style="line-height: 100px">Items List</h1>
-				    	<form method="post" action="${context}/admin/UpdateLocation">
+				    	<form method="post" action="${context}/admin/UpdateLocation" id="existingLocation">
 						
 						<%-- Names: [name(text), desc(text), address(text), zipcode(text), addDesc(text), staff(text), image(select)] --%>
 						<label for="name" style="font-size:1.5rem; float: left; font-weight:bold;">Location Name:</label>
@@ -119,7 +119,7 @@
 		<div class="col-sm-6" style="padding-left:50px">
 			<div class="jumbotron" style="margin:10px 0">
 			    	<h1 style="line-height: 100px">Create New Location</h1>
-			    	<form method="post" action="${context}/admin/CreateLocation">
+			    	<form method="post" action="${context}/admin/CreateLocation" id="newLocation">
 					
 					<%-- Names: [name(text), desc(text), address(text), zipcode(text), addDesc(text), staff(text), image(select)] --%>
 					<label for="name" style="font-size:1.5rem; float: left; font-weight:bold;">Location Name:</label>
@@ -148,7 +148,7 @@
 						</c:forEach>
 					</select>
 					<br>
-					<button class="btn btn-success btn-block" style="font-size: 2rem" type="submit">Create</button>
+					<button class="btn btn-success btn-block" style="font-size: 2rem" type="submit" id="create">Create</button>
 				</form>
 			   	</div>
 		</div>

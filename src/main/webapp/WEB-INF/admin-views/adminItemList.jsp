@@ -69,7 +69,7 @@
 		<div class="col-sm-6" style="padding-right:50px">
 			<div class="row">
 				<c:forEach items="${items}" var="item" >
-					<div class="jumbotron" style="margin:10px 0">
+					<div class="jumbotron" style="margin:10px 0" id="existingItem">
 				    	<h1 style="line-height: 100px">Items List</h1>
 				    	<form method="post" action="${context}/admin/UpdateItem">
 						
@@ -141,7 +141,7 @@
 		<div class="col-sm-6" style="padding-left:50px">
 			<div class="jumbotron" style="margin:10px 0">
 			    	<h1 style="line-height: 100px">Create New Item</h1>
-			    	<form method="post" action="${context}/admin/CreateItem">
+			    	<form method="post" action="${context}/admin/CreateItem" id="newItem">
 					
 					<%-- Names: [name(text), price(text), desc(text), image(select), active(select), category(select)] --%>
 					<label for="name" style="font-size:1.5rem; float: left; font-weight:bold;">Item Name:</label>
@@ -175,7 +175,7 @@
 						<option value="Other">Other</option>
 					</select>
 					<br>
-					<button class="btn btn-success btn-block" style="font-size: 2rem" type="submit">Create</button>
+					<button class="btn btn-success btn-block" style="font-size: 2rem" type="submit" id="create">Create</button>
 				</form>
 			   	</div>
 		</div>

@@ -204,18 +204,13 @@ public class MainController {
 			Boolean success = itemsBO.updateItem(item);
 			
 			//Return user to get page after updating the item
-			model = adminItemList();
-			
-			//Add whether or not the update was successful to the view
-			model.addObject("update",success);
+			model = new ModelAndView("redirect:/admin/adminItemList");
 		}
 		else if(delete != null) {
 			//Attempt to delete the item
 			Boolean success = itemsBO.removeItem(delete);
 			//Return user to get page
-			model = adminItemList();
-			//Add whether or not the delete was successful to the view
-			model.addObject("delete",success);
+			model = new ModelAndView("redirect:/admin/adminItemList");
 		}
 		else {
 			//If neither parameter was passed, send to error page.
@@ -251,10 +246,7 @@ public class MainController {
 		
 		//Return user to get page after updating the item
 		ModelAndView model;
-		model = adminItemList();
-		
-		//Add whether or not the creation was successful to the view
-		model.addObject("create",success);
+		model = new ModelAndView("redirect:/admin/adminItemList");
 		return model;
 	}
 	
@@ -285,10 +277,7 @@ public class MainController {
 		boolean success = ordersBO.deleteOrder(orderID);
 		
 		//Direct the model to the get page
-		model = adminOrderList();
-		
-		//Attach the results of the delete to the view
-		model.addObject("delete",success);
+		model = new ModelAndView("redirect:/admin/adminOrderList");
 		
 		//Return the view
 		return model;
@@ -348,18 +337,13 @@ public class MainController {
 			boolean success = storesBO.updateStore(store);
 			
 			//Return user to get page after updating the item
-			model = adminLocationList();
-			
-			//Add whether or not the update was successful to the view
-			model.addObject("update",success);
+			model = new ModelAndView("redirect:/admin/adminLocationList");
 		}
 		else if(delete != null) {
 			//Attempt to delete the item
 			Boolean success = storesBO.removeStore(delete);
 			//Return user to get page
-			model = adminLocationList();
-			//Add whether or not the delete was successful to the view
-			model.addObject("delete",success);
+			model = new ModelAndView("redirect:/admin/adminLocationList");
 		}
 		else {
 			//If neither parameter was passed, send to error page.
@@ -398,10 +382,7 @@ public class MainController {
 		
 		//Return user to get page after updating the item
 		ModelAndView model;
-		model = adminLocationList();
-		
-		//Add whether or not the creation was successful to the view
-		model.addObject("create",success);
+		model = new ModelAndView("redirect:/admin/adminLocationList");
 		return model;
 	}
 	

@@ -35,7 +35,7 @@
 		<%-- Start looping through orders --%>
 		<c:forEach items="${orders}" var="order">
 		<hr style="background-color: gray; color: gray">
-		<form method="post" action="${context}/admin/RemoveOrder">
+		<form method="post" action="${context}/admin/RemoveOrder" id="order">
 			<font style="font-size: 1.5rem">
 				Number of items: ${order.getItemCount()}<br>
 				Order Number: ${order.getOrderID()}<br>
