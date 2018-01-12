@@ -28,7 +28,9 @@ public class AdminOrdersPageSteps {
 
 	@When("^User Deletes an Order$")
 	public void user_Deletes_an_Order() throws Throwable {
-		MyWebDriver.driver.findElement(By.name("id")).click();
+		WebElement el = MyWebDriver.driver.findElement(By.name("id"));
+		MyWebDriver.scrollTo(el);
+		el.click();
 		
 	}
 

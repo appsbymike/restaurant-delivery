@@ -19,18 +19,22 @@
 	</div>
 	<%-- Logo --%>
 	<div class="jumbotron">
-		<img src="${context}Images/img-home.jpg" class="img img-responsive img-thumbnail"/>
+		<img src="${context}Images/img-home.jpg" class="img img-thumbnail"/>
 	</div>
 	<%-- Comments --%>
 	<div class="jumbotron"style="text-align:center;">
-		<font class="lead">
-		Welcome to the next level of food delivery.
-		We offer far less than the competitors and charge you WAY more.
-		<br>
-		And the service? Absolutely Abyssmal.
-		<br>
-		So how do we make our money? That's a very good question. Maybe this is a front, maybe its maybelline.
-		</font>
+		<div class="row">
+			<div class="col-sm-6 align-self-end">
+				<font class="lead">
+				"One cannot think well, love well, sleep well if one has not DINED well"
+				</font>
+			</div>
+			<div class="col-sm-6">
+				<font class="lead">
+				Pizza might just be the ultimate delivery meal, so why not up the ante a bit? This Clinton Hill pizzeria by husband-and-wife team Matt and Emily Hyland has only been open since early 2014, but its dough, mozzarella--both made in-house, by hand--and wood-burning oven have quickly established it as a force.
+				</font>
+			</div>
+		</div>
 	</div>
 	
 </div>
