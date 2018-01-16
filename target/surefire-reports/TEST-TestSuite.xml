@@ -1,93 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="61" failures="40" name="TestSuite" time="0.12" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.959" tests="59" errors="0" skipped="0" failures="39">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
-    <property name="java.vm.version" value="25.131-b11"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven\target\test-classes;C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven\target\classes;C:\Users\pfadmin\.m2\repository\org\springframework\spring-aop\5.0.2.RELEASE\spring-aop-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-beans\5.0.2.RELEASE\spring-beans-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-context\5.0.2.RELEASE\spring-context-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-core\5.0.2.RELEASE\spring-core-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-jcl\5.0.2.RELEASE\spring-jcl-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-expression\5.0.2.RELEASE\spring-expression-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-web\5.0.2.RELEASE\spring-web-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\pfadmin\.m2\repository\javax\servlet\javax.servlet-api\4.0.0\javax.servlet-api-4.0.0.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-webmvc\5.0.2.RELEASE\spring-webmvc-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\testng\testng\6.13.1\testng-6.13.1.jar;C:\Users\pfadmin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\pfadmin\.m2\repository\org\apache\commons\commons-csv\1.2\commons-csv-1.2.jar;C:\Users\pfadmin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\pfadmin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.8.1\selenium-java-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.8.1\selenium-api-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.8.1\selenium-edge-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.8.1\selenium-firefox-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.8.1\selenium-ie-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.8.1\selenium-opera-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.8.1\selenium-remote-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.8.1\selenium-safari-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.8.1\selenium-support-3.8.1.jar;C:\Users\pfadmin\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\pfadmin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\pfadmin\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\pfadmin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\pfadmin\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\pfadmin\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\pfadmin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\pfadmin\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\pfadmin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\pfadmin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\pfadmin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\pfadmin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.8.1\selenium-chrome-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\pfadmin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-test\5.0.2.RELEASE\spring-test-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-spring\1.2.5\cucumber-spring-1.2.5.jar;C:\Users\pfadmin\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\pfadmin\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven"/>
-    <property name="java.runtime.version" value="1.8.0_131-b11"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\pfadmin\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\pfadmin\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf996923862472512251.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\app\psadmin1\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\pfadmin\AppData\Local\Microsoft\WindowsApps;;C:\Users\pfadmin\Desktop;;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\pfadmin"/>
-    <property name="user.timezone" value="America/New_York"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="pfadmin"/>
-    <property name="java.class.path" value="C:\Users\pfadmin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_131"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\pfadmin\AppData\Local\Temp\surefire2560808242377256465\surefirebooter774877796957815593.jar C:\Users\pfadmin\AppData\Local\Temp\surefire2560808242377256465 2018-01-16T10-31-42_129-jvmRun1 surefire3628984096722949903tmp surefire_02207618103902220667tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven\target\test-classes;C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven\target\classes;C:\Users\pfadmin\.m2\repository\org\springframework\spring-aop\5.0.2.RELEASE\spring-aop-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-beans\5.0.2.RELEASE\spring-beans-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-context\5.0.2.RELEASE\spring-context-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-core\5.0.2.RELEASE\spring-core-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-jcl\5.0.2.RELEASE\spring-jcl-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-expression\5.0.2.RELEASE\spring-expression-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-web\5.0.2.RELEASE\spring-web-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\pfadmin\.m2\repository\javax\servlet\javax.servlet-api\4.0.0\javax.servlet-api-4.0.0.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-webmvc\5.0.2.RELEASE\spring-webmvc-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\org\testng\testng\6.13.1\testng-6.13.1.jar;C:\Users\pfadmin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\pfadmin\.m2\repository\org\apache\commons\commons-csv\1.2\commons-csv-1.2.jar;C:\Users\pfadmin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\pfadmin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.8.1\selenium-java-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.8.1\selenium-api-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.8.1\selenium-edge-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.8.1\selenium-firefox-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.8.1\selenium-ie-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.8.1\selenium-opera-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.8.1\selenium-remote-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.8.1\selenium-safari-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.8.1\selenium-support-3.8.1.jar;C:\Users\pfadmin\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\pfadmin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\pfadmin\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\pfadmin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\pfadmin\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\pfadmin\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\pfadmin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\pfadmin\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\pfadmin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\pfadmin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\pfadmin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\pfadmin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\pfadmin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.8.1\selenium-chrome-driver-3.8.1.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\pfadmin\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\pfadmin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\pfadmin\.m2\repository\org\springframework\spring-test\5.0.2.RELEASE\spring-test-5.0.2.RELEASE.jar;C:\Users\pfadmin\.m2\repository\info\cukes\cucumber-spring\1.2.5\cucumber-spring-1.2.5.jar;C:\Users\pfadmin\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\pfadmin\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\pfadmin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="basedir" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\pfadmin\AppData\Local\Temp\surefire2560808242377256465\surefirebooter774877796957815593.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="pfadmin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\pfadmin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\pfadmin\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="C:\Users\pfadmin\eclipse-workspace\RestaurantDelivery-MichaelGabriel-Maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\app\psadmin1\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\pfadmin\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\system32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase classname="testng.ItemsTest" name="addItemTest" time="0.022">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at testng.ItemsTest.addItemTest(ItemsTest.java:277)
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@71dac704
-java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.ItemsTest" name="addItemTest" time="0"/>
-  <testcase classname="testng.ItemsTest" name="addItemTest" time="0"/>
-  <testcase classname="testng.ItemsTest" name="getAllActiveItemsTest" time="0.008">
-    <failure message="
-Expected: every item is hasProperty(&quot;itemIsActive&quot;, is &quot;1&quot;)
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: every item is hasProperty(&quot;itemIsActive&quot;, is &quot;1&quot;)
+  <testcase name="getAllActiveItemsTest" classname="testng.ItemsTest" time="0.014">
+    <failure message="&#10;Expected: every item is hasProperty(&quot;itemIsActive&quot;, is &quot;1&quot;)&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: every item is hasProperty("itemIsActive", is "1")
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ItemsTest.getAllActiveItemsTest(ItemsTest.java:61)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
 	at del.res.dao.ItemsDAO.getAllActiveItems(ItemsDAO.java:24)
-	at del.res.bo.ItemsBO.getAllActiveItems(ItemsBO.java:42)
+	at del.res.bo.ItemsBO.getAllActiveItems(ItemsBO.java:41)
 	at testng.ItemsTest.getAllActiveItemsTest(ItemsTest.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -111,152 +95,33 @@ Expected: every item is hasProperty(&quot;itemIsActive&quot;, is &quot;1&quot;)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ItemsTest" name="getAllItemsTest" time="0">
-    <failure message="
-Expected: every item is an instance of del.res.models.Item
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: every item is an instance of del.res.models.Item
-     but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:166)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getAllItems(ItemsDAO.java:128)
-	at del.res.bo.ItemsBO.getAllItems(ItemsBO.java:54)
-	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:165)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
-  </testcase>
-  <testcase classname="testng.ItemsTest" name="getCartItemsTest" time="0.015">
-    <failure message="
-Expected: every item is hasProperty(&quot;itemName&quot;, one of {&quot;Plain Pie&quot;, &quot;Pepperoni Pie&quot;})
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: every item is hasProperty(&quot;itemName&quot;, one of {&quot;Plain Pie&quot;, &quot;Pepperoni Pie&quot;})
-     but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at testng.ItemsTest.getCartItemsTest(ItemsTest.java:112)
-</failure>
-    <system-out>[Plain Pie, Pepperoni Pie]
-null
-java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getCartItems(ItemsDAO.java:68)
-	at del.res.bo.ItemsBO.getCartItems(ItemsBO.java:50)
-	at testng.ItemsTest.getCartItemsTest(ItemsTest.java:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
-  </testcase>
-  <testcase classname="testng.ItemsTest" name="getCartItemsTest" time="0.008"/>
-  <testcase classname="testng.ItemsTest" name="getItemsCountTest" time="0.003">
-    <failure message="
-Expected: a value greater than &lt;0&gt;
-     but: &lt;0&gt; was equal to &lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: a value greater than &lt;0&gt;
-     but: &lt;0&gt; was equal to &lt;0&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+  <testcase name="getItemsCountTest" classname="testng.ItemsTest" time="0.002">
+    <failure message="&#10;Expected: a value greater than &lt;0&gt;&#10;     but: &lt;0&gt; was equal to &lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: a value greater than <0>
+     but: <0> was equal to <0>
 	at testng.ItemsTest.getItemsCountTest(ItemsTest.java:72)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+]]></failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.ItemsTest" name="getTotalsTest" time="0.003">
+  <testcase name="getTotalsTest" classname="testng.ItemsTest" time="0.007">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:98)
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:104)
 	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:25)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -281,30 +146,23 @@ Expected: a value greater than &lt;0&gt;
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ItemsTest" name="getTotalsTest" time="0.003">
+  <testcase name="getTotalsTest" classname="testng.ItemsTest" time="0.002">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:98)
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:104)
 	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:25)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -329,30 +187,23 @@ Expected: a value greater than &lt;0&gt;
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ItemsTest" name="getTotalsTest" time="0.003">
+  <testcase name="getTotalsTest" classname="testng.ItemsTest" time="0.003">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:98)
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ItemsDAO.getPrices(ItemsDAO.java:104)
 	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:25)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -377,80 +228,42 @@ Expected: a value greater than &lt;0&gt;
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ItemsTest" name="updateItemTest" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.ItemsTest" name="updateItemTest" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.ItemsTest" name="updateItemTest" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.OrdersTest" name="addItemToOrderTest" time="0">
+  <testcase name="addItemToOrderTest" classname="testng.OrdersTest" time="0.001">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.OrdersTest.addItemToOrderTest(OrdersTest.java:119)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.OrdersTest" name="addItemToOrderTest" time="0"/>
-  <testcase classname="testng.OrdersTest" name="addItemToOrderTest" time="0"/>
-  <testcase classname="testng.OrdersTest" name="addItemToOrderTest" time="0"/>
-  <testcase classname="testng.OrdersTest" name="createOrderTest" time="0">
-    <failure message="
-Expected: &lt;true&gt;
-     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &lt;true&gt;
-     but: was &lt;false&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+  <testcase name="addItemToOrderTest" classname="testng.OrdersTest" time="0.001"/>
+  <testcase name="addItemToOrderTest" classname="testng.OrdersTest" time="0"/>
+  <testcase name="addItemToOrderTest" classname="testng.OrdersTest" time="0"/>
+  <testcase name="createOrderTest" classname="testng.OrdersTest" time="0.005">
+    <failure message="&#10;Expected: &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <true>
+     but: was <false>
 	at testng.OrdersTest.createOrderTest(OrdersTest.java:80)
-</failure>
-    <system-out>User ID: 1
+]]></failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+User ID: 1
 Store ID: 1
 CC Number: 1111111111
 Security Number: 1234
 Zipcode: 11111
 Pretax Revenue: 11.11
 Tax Revenue: 1
-java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
 	at del.res.dao.OrdersDAO.createOrder(OrdersDAO.java:20)
 	at del.res.bo.OrdersBO.createOrder(OrdersBO.java:19)
 	at testng.OrdersTest.createOrderTest(OrdersTest.java:76)
@@ -476,57 +289,37 @@ java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.OrdersTest" name="getAllOrdersTest" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.OrdersDAO.getAllOrders(OrdersDAO.java:138)
-	at del.res.bo.OrdersBO.getAllOrders(OrdersBO.java:31)
-	at testng.OrdersTest.getAllOrdersTest(OrdersTest.java:171)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.OrdersTest" name="getOrdersByUserTest" time="0">
+  <testcase name="getOrdersByUserTest" classname="testng.OrdersTest" time="0">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.OrdersTest.getOrdersByUserTest(OrdersTest.java:158)
 </failure>
-    <system-out>true
+    <system-out><![CDATA[true
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+]]></system-out>
   </testcase>
-  <testcase classname="testng.OrdersTest" name="getOrdersByUserTest" time="0"/>
-  <testcase classname="testng.OrdersTest" name="getOrdersByUserTest" time="0"/>
-  <testcase classname="testng.ReceiptsTest" name="getReceiptItemsTest" time="0"/>
-  <testcase classname="testng.ReceiptsTest" name="getReceiptItemsTest" time="0">
-    <failure message="
-Expected: an empty collection
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="getOrdersByUserTest" classname="testng.OrdersTest" time="0"/>
+  <testcase name="getOrdersByUserTest" classname="testng.OrdersTest" time="0.001"/>
+  <testcase name="getReceiptItemsTest" classname="testng.ReceiptsTest" time="0.006"/>
+  <testcase name="getReceiptItemsTest" classname="testng.ReceiptsTest" time="0.004">
+    <failure message="&#10;Expected: an empty collection&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
 Expected: an empty collection
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ReceiptsTest.getReceiptItemsTest(ReceiptsTest.java:128)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ReceiptsDAO.getReceiptItems(ReceiptsDAO.java:70)
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ReceiptsDAO.getReceiptItems(ReceiptsDAO.java:76)
 	at del.res.bo.ReceiptsBO.getReceiptItems(ReceiptsBO.java:22)
 	at testng.ReceiptsTest.getReceiptItemsTest(ReceiptsTest.java:126)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -551,35 +344,26 @@ Expected: an empty collection
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ReceiptsTest" name="getReceiptSummaryTest" time="0.016">
-    <failure message="
-Expected: same property values as ReceiptSummary [itemCount: &lt;2&gt;, orderID: null, orderTax: &quot;$2.58&quot;, orderTotal: &quot;$32.08&quot;, storeAddress: &quot;Bronx, NY&quot;, storeDescription: &quot;Frankies Pizza&quot;]
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: same property values as ReceiptSummary [itemCount: &lt;2&gt;, orderID: null, orderTax: &quot;$2.58&quot;, orderTotal: &quot;$32.08&quot;, storeAddress: &quot;Bronx, NY&quot;, storeDescription: &quot;Frankies Pizza&quot;]
+  <testcase name="getReceiptSummaryTest" classname="testng.ReceiptsTest" time="0.011">
+    <failure message="&#10;Expected: same property values as ReceiptSummary [itemCount: &lt;1&gt;, orderID: null, orderTax: &quot;$1.18&quot;, orderTotal: &quot;$14.68&quot;, storeAddress: &quot;Lower Manhattan, NY&quot;, storeDescription: &quot;Papa Pizza&quot;]&#10;     but: was null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: same property values as ReceiptSummary [itemCount: <1>, orderID: null, orderTax: "$1.18", orderTotal: "$14.68", storeAddress: "Lower Manhattan, NY", storeDescription: "Papa Pizza"]
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ReceiptsTest.getReceiptSummaryTest(ReceiptsTest.java:72)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ReceiptsDAO.getReceiptSummary(ReceiptsDAO.java:21)
+]]></failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ReceiptsDAO.getReceiptSummary(ReceiptsDAO.java:20)
 	at del.res.bo.ReceiptsBO.getReceiptSummary(ReceiptsBO.java:12)
 	at testng.ReceiptsTest.getReceiptSummaryTest(ReceiptsTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -604,35 +388,26 @@ Expected: same property values as ReceiptSummary [itemCount: &lt;2&gt;, orderID:
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ReceiptsTest" name="validateUserTest" time="0">
-    <failure message="
-Expected: &lt;true&gt;
-     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &lt;true&gt;
-     but: was &lt;false&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+  <testcase name="validateUserTest" classname="testng.ReceiptsTest" time="0.003">
+    <failure message="&#10;Expected: &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <true>
+     but: was <false>
 	at testng.ReceiptsTest.validateUserTest(ReceiptsTest.java:100)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.ReceiptsDAO.validateUser(ReceiptsDAO.java:46)
+]]></failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ReceiptsDAO.validateUser(ReceiptsDAO.java:49)
 	at del.res.bo.ReceiptsBO.validateUser(ReceiptsBO.java:17)
 	at testng.ReceiptsTest.validateUserTest(ReceiptsTest.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -657,80 +432,47 @@ Expected: &lt;true&gt;
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.ReviewsTest" name="getItemInfoTest" time="0">
+  <testcase name="getItemInfoTest" classname="testng.ReviewsTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getItemInfo(ReviewsDAO.java:46)
-	at del.res.bo.ReviewsBO.getItemInfo(ReviewsBO.java:17)
 	at testng.ReviewsTest.getItemInfoTest(ReviewsTest.java:104)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.ReviewsTest" name="getPastReviewsTest" time="0">
+  <testcase name="getPastReviewsTest" classname="testng.ReviewsTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getPastReviews(ReviewsDAO.java:73)
-	at del.res.bo.ReviewsBO.getPastReviews(ReviewsBO.java:22)
 	at testng.ReviewsTest.getPastReviewsTest(ReviewsTest.java:130)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.ReviewsTest" name="getReviewsByUserTest" time="0">
+  <testcase name="submitReviewTest" classname="testng.ReviewsTest" time="0.002">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getReviewsByUser(ReviewsDAO.java:99)
-	at del.res.bo.ReviewsBO.getReviewsByUser(ReviewsBO.java:27)
-	at testng.ReviewsTest.getReviewsByUserTest(ReviewsTest.java:163)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.ReviewsTest" name="submitReviewTest" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.submitReview(ReviewsDAO.java:20)
-	at del.res.bo.ReviewsBO.submitReview(ReviewsBO.java:12)
 	at testng.ReviewsTest.submitReviewTest(ReviewsTest.java:65)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.StoresTest" name="createStoreTest" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.StoresDAO.createStore(StoresDAO.java:96)
-	at del.res.bo.StoresBO.createStore(StoresBO.java:22)
-	at testng.StoresTest.createStoreTest(StoresTest.java:124)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.StoresTest" name="getAllStoresTest" time="0.002">
-    <failure message="
-Expected: every item is an instance of del.res.models.Store
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="getAllStoresTest" classname="testng.StoresTest" time="0.018">
+    <failure message="&#10;Expected: every item is an instance of del.res.models.Store&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
 Expected: every item is an instance of del.res.models.Store
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.StoresTest.getAllStoresTest(StoresTest.java:49)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.StoresDAO.getAllStores(StoresDAO.java:20)
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.StoresDAO.getAllStores(StoresDAO.java:19)
 	at del.res.bo.StoresBO.getAllStores(StoresBO.java:18)
 	at testng.StoresTest.getAllStoresTest(StoresTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -755,38 +497,20 @@ Expected: every item is an instance of del.res.models.Store
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.StoresTest" name="updateStoreTest" time="0.001">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.StoresDAO.getStoreByID(StoresDAO.java:125)
-	at del.res.bo.StoresBO.getStoreByID(StoresBO.java:33)
-	at testng.StoresTest.updateStoreTest(StoresTest.java:86)
-</failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-  </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>[Valid credentials; user created, mike2, mike, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 1]
+    <system-out><![CDATA[[Valid credentials; user created, mike2, mike, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 1]
 [Username, too long, aaaaaaaaaaaaaaaaaaaaa, mike, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 0]
 [Password too long, mike4, aaaaaaaaaaaaaaaaaaaaa, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 0]
 [Firstname too long, mike5, mike, aaaaaaaaaaaaaaaaaaaaa, Mike, m, 24 Mars Place, 1234567890, mike@mike.com, 0]
@@ -796,101 +520,75 @@ Expected: every item is an instance of del.res.models.Store
 [Phone non-numeric, mike9, mike, Mike, Mike, m, 23 Mars Place, abcdefghij, mike@mike.com, 0]
 [Email too long, mike10, mike, Mike, Mike, m, 23 Mars Place, 23 Mars Place, aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com, 0]
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="createUserTest" time="0">
+  <testcase name="createUserTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="getDetailsTest" time="0">
+  <testcase name="getDetailsTest" classname="testng.UsersTest" time="0.002">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.UsersTest.getDetailsTest(UsersTest.java:154)
 </failure>
-    <system-out>[Valid ID, 3, mike]
+    <system-out><![CDATA[[Valid ID, 3, mike]
 [Invalid ID, 4000, null]
 [ID contains non-numeric chars, abc, null]
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.UsersDAO.getDetails(UsersDAO.java:89)
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.UsersDAO.getDetails(UsersDAO.java:97)
 	at del.res.bo.UsersBO.getDetails(UsersBO.java:37)
 	at testng.UsersTest.getDetailsTest(UsersTest.java:147)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -915,42 +613,33 @@ java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.UsersTest" name="getDetailsTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="getDetailsTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="loginQueryTest" time="0.015">
-    <failure message="
-Expected: &quot;3&quot;
-     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &quot;3&quot;
+  <testcase name="getDetailsTest" classname="testng.UsersTest" time="0.001"/>
+  <testcase name="getDetailsTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="loginQueryTest" classname="testng.UsersTest" time="0.004">
+    <failure message="&#10;Expected: &quot;3&quot;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "3"
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.UsersTest.loginQueryTest(UsersTest.java:123)
 </failure>
-    <system-out>[Valid Normal Login Creds, mike, mike, 3]
+    <system-out><![CDATA[[Valid Normal Login Creds, mike, mike, 3]
 [Invalid username, abcd1234, mike, null]
 [Invalid password, mike, abcd1234, null]
 [Invalid username (too long), abcdefghijklmnopqrstuvwxyz, mike, null]
 [Invalid password (too long), mike, abcdefghijklmnopqrstuvwxyz, null]
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.UsersDAO.loginQuery(UsersDAO.java:66)
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.UsersDAO.loginQuery(UsersDAO.java:70)
 	at del.res.bo.UsersBO.loginQuery(UsersBO.java:29)
 	at testng.UsersTest.loginQueryTest(UsersTest.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -975,62 +664,48 @@ java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.UsersTest" name="loginQueryTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="loginQueryTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="loginQueryTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="loginQueryTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="registerQueryTest" time="0">
+  <testcase name="loginQueryTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="loginQueryTest" classname="testng.UsersTest" time="0.001"/>
+  <testcase name="loginQueryTest" classname="testng.UsersTest" time="0.001"/>
+  <testcase name="loginQueryTest" classname="testng.UsersTest" time="0.001"/>
+  <testcase name="registerQueryTest" classname="testng.UsersTest" time="0">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 </failure>
-    <system-out>[Username Exists, mike, true]
-[Username Doesn&apos;t Exist, mike9001, false]
+    <system-out><![CDATA[[Username Exists, mike, true]
+[Username Doesn't Exist, mike9001, false]
 [Username Too Long, aaaaaaaaaaaaaaaaaaaaa, false]
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="registerQueryTest" time="0">
+  <testcase name="registerQueryTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="registerQueryTest" time="0">
+  <testcase name="registerQueryTest" classname="testng.UsersTest" time="0.001">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 </failure>
-    <system-out>java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
   </testcase>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0">
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0.002">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.UsersTest.updateUserTest(UsersTest.java:207)
 </failure>
-    <system-out>[Valid credentials; user updated, test, Mike, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 1]
+    <system-out><![CDATA[[Valid credentials; user updated, test, Mike, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 1]
 [Password too long, aaaaaaaaaaaaaaaaaaaaa, Mike, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 0]
 [Firstname too long, test, aaaaaaaaaaaaaaaaaaaaa, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 0]
 [Lastname too long, test, Mike, aaaaaaaaaaaaaaaaaaaaa, 23 Mars Place, 1234567890, mike@mike.com, 2, 0]
@@ -1038,9 +713,9 @@ java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
 [Phone non-numeric, test, Mike, Mike, 23 Mars Place, abcdefghij, mike@mike.com, 2, 0]
 [Email too long, test, Mike, Mike, 23 Mars Place, 23 Mars Place, aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com, 2, 0]
 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
-</system-out>
-    <system-err>java.lang.NullPointerException
-	at del.res.dao.UsersDAO.getDetails(UsersDAO.java:89)
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.UsersDAO.getDetails(UsersDAO.java:97)
 	at del.res.bo.UsersBO.getDetails(UsersBO.java:37)
 	at testng.UsersTest.updateUserTest(UsersTest.java:187)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1065,25 +740,121 @@ java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.runSuites(TestNG.java:1028)
 	at org.testng.TestNG.run(TestNG.java:996)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
+  </testcase>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="updateUserTest" classname="testng.UsersTest" time="0"/>
+  <testcase name="addItemTest" classname="testng.ItemsTest" time="0.001">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at testng.ItemsTest.addItemTest(ItemsTest.java:277)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="addItemTest" classname="testng.ItemsTest" time="0"/>
+  <testcase name="addItemTest" classname="testng.ItemsTest" time="0.001"/>
+  <testcase name="getAllItemsTest" classname="testng.ItemsTest" time="0.001">
+    <failure message="&#10;Expected: every item is an instance of del.res.models.Item&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: every item is an instance of del.res.models.Item
+     but: was null
+	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:166)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException
+	at del.res.dao.ItemsDAO.getAllItems(ItemsDAO.java:137)
+	at del.res.bo.ItemsBO.getAllItems(ItemsBO.java:53)
+	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:165)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</system-err>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></system-err>
   </testcase>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0.016"/>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0"/>
-  <testcase classname="testng.UsersTest" name="updateUserTest" time="0"/>
+  <testcase name="updateItemTest" classname="testng.ItemsTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="updateItemTest" classname="testng.ItemsTest" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="updateItemTest" classname="testng.ItemsTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="getReviewsByUserTest" classname="testng.ReviewsTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.ReviewsTest.getReviewsByUserTest(ReviewsTest.java:163)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="getAllOrdersTest" classname="testng.OrdersTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.OrdersTest.getAllOrdersTest(OrdersTest.java:171)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="createStoreTest" classname="testng.StoresTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.StoresTest.createStoreTest(StoresTest.java:124)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
+  <testcase name="updateStoreTest" classname="testng.StoresTest" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testng.StoresTest.updateStoreTest(StoresTest.java:86)
+</failure>
+    <system-out><![CDATA[java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+]]></system-out>
+  </testcase>
 </testsuite>

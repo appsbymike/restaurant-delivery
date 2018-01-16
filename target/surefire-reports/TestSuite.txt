@@ -1,270 +1,187 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 61, Failures: 40, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec <<< FAILURE!
-addItemTest(testng.ItemsTest)  Time elapsed: 0.022 sec  <<< FAILURE!
-java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at testng.ItemsTest.addItemTest(ItemsTest.java:277)
-
-getAllActiveItemsTest(testng.ItemsTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+Tests run: 59, Failures: 39, Errors: 0, Skipped: 0, Time elapsed: 0.959 s <<< FAILURE! - in TestSuite
+getAllActiveItemsTest(testng.ItemsTest)  Time elapsed: 0.014 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: every item is hasProperty("itemIsActive", is "1")
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ItemsTest.getAllActiveItemsTest(ItemsTest.java:61)
 
-getAllItemsTest(testng.ItemsTest)  Time elapsed: 0 sec  <<< FAILURE!
+getItemsCountTest(testng.ItemsTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: 
-Expected: every item is an instance of del.res.models.Item
-     but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:166)
 
-getCartItemsTest(testng.ItemsTest)  Time elapsed: 0.015 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: every item is hasProperty("itemName", one of {"Plain Pie", "Pepperoni Pie"})
-     but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at testng.ItemsTest.getCartItemsTest(ItemsTest.java:112)
-
-getItemsCountTest(testng.ItemsTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.AssertionError: 
 Expected: a value greater than <0>
      but: <0> was equal to <0>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ItemsTest.getItemsCountTest(ItemsTest.java:72)
 
-getTotalsTest(testng.ItemsTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+getTotalsTest(testng.ItemsTest)  Time elapsed: 0.007 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 
-getTotalsTest(testng.ItemsTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+getTotalsTest(testng.ItemsTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 
-getTotalsTest(testng.ItemsTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+getTotalsTest(testng.ItemsTest)  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.bo.ItemsBO.getTotals(ItemsBO.java:26)
 	at testng.ItemsTest.getTotalsTest(ItemsTest.java:151)
 
-updateItemTest(testng.ItemsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-
-updateItemTest(testng.ItemsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-
-updateItemTest(testng.ItemsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.ItemsDAO.getItemByID(ItemsDAO.java:238)
-	at del.res.bo.ItemsBO.getItemByID(ItemsBO.java:70)
-	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
-
-addItemToOrderTest(testng.OrdersTest)  Time elapsed: 0 sec  <<< FAILURE!
+addItemToOrderTest(testng.OrdersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.OrdersTest.addItemToOrderTest(OrdersTest.java:119)
 
-createOrderTest(testng.OrdersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createOrderTest(testng.OrdersTest)  Time elapsed: 0.005 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: <true>
      but: was <false>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.OrdersTest.createOrderTest(OrdersTest.java:80)
 
-getAllOrdersTest(testng.OrdersTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.OrdersDAO.getAllOrders(OrdersDAO.java:138)
-	at del.res.bo.OrdersBO.getAllOrders(OrdersBO.java:31)
-	at testng.OrdersTest.getAllOrdersTest(OrdersTest.java:171)
-
-getOrdersByUserTest(testng.OrdersTest)  Time elapsed: 0 sec  <<< FAILURE!
+getOrdersByUserTest(testng.OrdersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.OrdersTest.getOrdersByUserTest(OrdersTest.java:158)
 
-getReceiptItemsTest(testng.ReceiptsTest)  Time elapsed: 0 sec  <<< FAILURE!
+getReceiptItemsTest(testng.ReceiptsTest)  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: an empty collection
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ReceiptsTest.getReceiptItemsTest(ReceiptsTest.java:128)
 
-getReceiptSummaryTest(testng.ReceiptsTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+getReceiptSummaryTest(testng.ReceiptsTest)  Time elapsed: 0.011 s  <<< FAILURE!
 java.lang.AssertionError: 
-Expected: same property values as ReceiptSummary [itemCount: <2>, orderID: null, orderTax: "$2.58", orderTotal: "$32.08", storeAddress: "Bronx, NY", storeDescription: "Frankies Pizza"]
+
+Expected: same property values as ReceiptSummary [itemCount: <1>, orderID: null, orderTax: "$1.18", orderTotal: "$14.68", storeAddress: "Lower Manhattan, NY", storeDescription: "Papa Pizza"]
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ReceiptsTest.getReceiptSummaryTest(ReceiptsTest.java:72)
 
-validateUserTest(testng.ReceiptsTest)  Time elapsed: 0 sec  <<< FAILURE!
+validateUserTest(testng.ReceiptsTest)  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: <true>
      but: was <false>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.ReceiptsTest.validateUserTest(ReceiptsTest.java:100)
 
-getItemInfoTest(testng.ReviewsTest)  Time elapsed: 0 sec  <<< FAILURE!
+getItemInfoTest(testng.ReviewsTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getItemInfo(ReviewsDAO.java:46)
-	at del.res.bo.ReviewsBO.getItemInfo(ReviewsBO.java:17)
 	at testng.ReviewsTest.getItemInfoTest(ReviewsTest.java:104)
 
-getPastReviewsTest(testng.ReviewsTest)  Time elapsed: 0 sec  <<< FAILURE!
+getPastReviewsTest(testng.ReviewsTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getPastReviews(ReviewsDAO.java:73)
-	at del.res.bo.ReviewsBO.getPastReviews(ReviewsBO.java:22)
 	at testng.ReviewsTest.getPastReviewsTest(ReviewsTest.java:130)
 
-getReviewsByUserTest(testng.ReviewsTest)  Time elapsed: 0 sec  <<< FAILURE!
+submitReviewTest(testng.ReviewsTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.getReviewsByUser(ReviewsDAO.java:99)
-	at del.res.bo.ReviewsBO.getReviewsByUser(ReviewsBO.java:27)
-	at testng.ReviewsTest.getReviewsByUserTest(ReviewsTest.java:163)
-
-submitReviewTest(testng.ReviewsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.ReviewsDAO.submitReview(ReviewsDAO.java:20)
-	at del.res.bo.ReviewsBO.submitReview(ReviewsBO.java:12)
 	at testng.ReviewsTest.submitReviewTest(ReviewsTest.java:65)
 
-createStoreTest(testng.StoresTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.StoresDAO.createStore(StoresDAO.java:96)
-	at del.res.bo.StoresBO.createStore(StoresBO.java:22)
-	at testng.StoresTest.createStoreTest(StoresTest.java:124)
-
-getAllStoresTest(testng.StoresTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+getAllStoresTest(testng.StoresTest)  Time elapsed: 0.018 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: every item is an instance of del.res.models.Store
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.StoresTest.getAllStoresTest(StoresTest.java:49)
 
-updateStoreTest(testng.StoresTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.StoresDAO.getStoreByID(StoresDAO.java:125)
-	at del.res.bo.StoresBO.getStoreByID(StoresBO.java:33)
-	at testng.StoresTest.updateStoreTest(StoresTest.java:86)
-
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-createUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+createUserTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
-	at del.res.bo.UsersBO.createUser(UsersBO.java:20)
 	at testng.UsersTest.createUserTest(UsersTest.java:94)
 
-getDetailsTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+getDetailsTest(testng.UsersTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.UsersTest.getDetailsTest(UsersTest.java:154)
 
-loginQueryTest(testng.UsersTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+loginQueryTest(testng.UsersTest)  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: 
+
 Expected: "3"
      but: was null
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
 	at testng.UsersTest.loginQueryTest(UsersTest.java:123)
 
-registerQueryTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+registerQueryTest(testng.UsersTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 
-registerQueryTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+registerQueryTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 
-registerQueryTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+registerQueryTest(testng.UsersTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException
-	at del.res.dao.UsersDAO.registerQuery(UsersDAO.java:21)
-	at del.res.bo.UsersBO.registerQuery(UsersBO.java:16)
 	at testng.UsersTest.registerQueryTest(UsersTest.java:62)
 
-updateUserTest(testng.UsersTest)  Time elapsed: 0 sec  <<< FAILURE!
+updateUserTest(testng.UsersTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
 	at testng.UsersTest.updateUserTest(UsersTest.java:207)
+
+addItemTest(testng.ItemsTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at testng.ItemsTest.addItemTest(ItemsTest.java:277)
+
+getAllItemsTest(testng.ItemsTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: every item is an instance of del.res.models.Item
+     but: was null
+	at testng.ItemsTest.getAllItemsTest(ItemsTest.java:166)
+
+updateItemTest(testng.ItemsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+
+updateItemTest(testng.ItemsTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+
+updateItemTest(testng.ItemsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.ItemsTest.updateItemTest(ItemsTest.java:202)
+
+getReviewsByUserTest(testng.ReviewsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.ReviewsTest.getReviewsByUserTest(ReviewsTest.java:163)
+
+getAllOrdersTest(testng.OrdersTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.OrdersTest.getAllOrdersTest(OrdersTest.java:171)
+
+createStoreTest(testng.StoresTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.StoresTest.createStoreTest(StoresTest.java:124)
+
+updateStoreTest(testng.StoresTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testng.StoresTest.updateStoreTest(StoresTest.java:86)
 

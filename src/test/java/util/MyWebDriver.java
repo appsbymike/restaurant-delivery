@@ -14,12 +14,12 @@ public class MyWebDriver {
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
 		
 		//Uncomment to use regular browser
-		ChromeDriver d = new ChromeDriver();
+//		ChromeDriver d = new ChromeDriver();
 		
 		//Comment to use regular browser
-//		ChromeOptions o = new ChromeOptions();
-//		o.addArguments("--headless");
-//		ChromeDriver d = new ChromeDriver(o);
+		ChromeOptions o = new ChromeOptions();
+		o.addArguments("--headless");
+		ChromeDriver d = new ChromeDriver(o);
 		
 		d.get(URL);
 		driver = d;

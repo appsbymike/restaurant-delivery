@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="27" total="86" passed="59">
   <reporter-output>
   </reporter-output>
-  <suite name="Unit Tests" duration-ms="3000" started-at="2018-01-16T15:02:54Z" finished-at="2018-01-16T15:02:57Z">
+  <suite name="Unit Tests" duration-ms="2940" started-at="2018-01-16T15:32:17Z" finished-at="2018-01-16T15:32:20Z">
     <groups>
       <group name="usertest">
         <method signature="ItemsTest.getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" class="testng.ItemsTest"/>
@@ -61,23 +61,23 @@
         <method signature="StoresTest.updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" class="testng.StoresTest"/>
       </group> <!-- admintest -->
     </groups>
-    <test name="Regular User Tests" duration-ms="2498" started-at="2018-01-16T15:02:54Z" finished-at="2018-01-16T15:02:56Z">
+    <test name="Regular User Tests" duration-ms="2342" started-at="2018-01-16T15:32:17Z" finished-at="2018-01-16T15:32:20Z">
       <class name="testng.StoresTest">
-        <test-method status="PASS" signature="getAllStoresTest()[pri:0, instance:testng.StoresTest@29ca901e]" name="getAllStoresTest" duration-ms="82" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllStoresTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@29ca901e]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@29ca901e]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@29ca901e]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getAllStoresTest()[pri:0, instance:testng.StoresTest@29ca901e]" name="getAllStoresTest" duration-ms="23" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllStoresTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@29ca901e]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.StoresTest -->
       <class name="testng.ReceiptsTest">
-        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="25" started-at="2018-01-16T10:32:18Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -98,11 +98,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReceiptItemsTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="24" started-at="2018-01-16T10:32:18Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -123,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReceiptItemsTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getReceiptSummaryTest(java.lang.String, int, del.res.models.ReceiptSummary)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptSummaryTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptSummary" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getReceiptSummaryTest(java.lang.String, int, del.res.models.ReceiptSummary)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptSummaryTest" duration-ms="28" started-at="2018-01-16T10:32:18Z" data-provider="getReceiptSummary" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -152,7 +152,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReceiptSummaryTest -->
-        <test-method status="PASS" signature="validateUserTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="validateUserTest" duration-ms="22" started-at="2018-01-16T10:02:55Z" data-provider="validateUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="validateUserTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="validateUserTest" duration-ms="23" started-at="2018-01-16T10:32:19Z" data-provider="validateUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -178,13 +178,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
       </class> <!-- testng.ReceiptsTest -->
       <class name="testng.UsersTest">
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="61" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="46" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -240,15 +244,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="23" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="22" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="46" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="51" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -304,19 +304,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="35" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="47" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -372,11 +368,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="46" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="49" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -432,11 +436,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="54" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="47" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -492,19 +500,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="48" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="48" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -560,15 +564,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="59" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="45" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -624,15 +624,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="43" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="49" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -688,11 +688,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="50" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="54" started-at="2018-01-16T10:32:19Z" data-provider="createUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -748,23 +748,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="26" started-at="2018-01-16T10:32:19Z" data-provider="getDetails" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -785,11 +785,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDetailsTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="24" started-at="2018-01-16T10:32:19Z" data-provider="getDetails" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -810,15 +810,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDetailsTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="40" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="23" started-at="2018-01-16T10:32:19Z" data-provider="getDetails" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -839,19 +843,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDetailsTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="13" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="23" started-at="2018-01-16T10:32:19Z" data-provider="loginQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -877,11 +877,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginQueryTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="38" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="25" started-at="2018-01-16T10:32:19Z" data-provider="loginQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -907,19 +907,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginQueryTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="23" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="26" started-at="2018-01-16T10:32:19Z" data-provider="loginQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -945,7 +945,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginQueryTest -->
-        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="20" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="27" started-at="2018-01-16T10:32:19Z" data-provider="loginQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -971,23 +979,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginQueryTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="16" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="34" started-at="2018-01-16T10:32:19Z" data-provider="loginQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1013,15 +1013,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginQueryTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="52" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="21" started-at="2018-01-16T10:32:19Z" data-provider="registerQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1042,7 +1042,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerQueryTest -->
-        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="22" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="21" started-at="2018-01-16T10:32:19Z" data-provider="registerQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1063,15 +1063,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerQueryTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="17" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="22" started-at="2018-01-16T10:32:19Z" data-provider="registerQuery" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1092,23 +1092,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerQueryTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="112" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="46" started-at="2018-01-16T10:32:19Z" data-provider="updateUser" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1159,15 +1159,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="51" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="22" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="43" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="47" started-at="2018-01-16T10:32:19Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1218,7 +1218,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="32" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="50" started-at="2018-01-16T10:32:20Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1269,23 +1269,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="58" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="49" started-at="2018-01-16T10:32:20Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1336,15 +1336,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="45" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="46" started-at="2018-01-16T10:32:20Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1395,11 +1391,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="44" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="47" started-at="2018-01-16T10:32:20Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1450,15 +1450,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="46" started-at="2018-01-16T10:32:20Z" data-provider="updateUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -1509,21 +1509,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.UsersTest -->
       <class name="testng.OrdersTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="17" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="26" started-at="2018-01-16T10:32:18Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1549,11 +1549,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToOrderTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="35" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="25" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="15" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="28" started-at="2018-01-16T10:32:18Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1579,15 +1579,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToOrderTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="23" started-at="2018-01-16T10:32:18Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1613,15 +1613,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToOrderTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="24" started-at="2018-01-16T10:32:18Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1647,11 +1647,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToOrderTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="createOrderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="createOrderTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="createOrder" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createOrderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="createOrderTest" duration-ms="27" started-at="2018-01-16T10:32:18Z" data-provider="createOrder" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1702,23 +1710,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrderTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="25" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="34" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="19" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="35" started-at="2018-01-16T10:32:18Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1739,7 +1739,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOrdersByUserTest -->
-        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="35" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="2" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="24" started-at="2018-01-16T10:32:18Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1760,23 +1768,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOrdersByUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="24" started-at="2018-01-16T10:32:18Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1797,41 +1797,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOrdersByUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.OrdersTest -->
       <class name="testng.ItemsTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="5" started-at="2018-01-16T10:32:17Z" finished-at="2018-01-16T10:32:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" duration-ms="525" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" duration-ms="536" started-at="2018-01-16T10:32:17Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllActiveItemsTest -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="1" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="getItemsCountTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getItemsCountTest" duration-ms="31" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="getItemsCountTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getItemsCountTest" duration-ms="32" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getItemsCountTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="62" started-at="2018-01-16T10:02:54Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="61" started-at="2018-01-16T10:32:18Z" data-provider="getTotals" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1852,11 +1852,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTotalsTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="27" started-at="2018-01-16T10:32:18Z" data-provider="getTotals" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1877,19 +1873,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTotalsTest -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="26" started-at="2018-01-16T10:32:18Z" data-provider="getTotals" finished-at="2018-01-16T10:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -1910,13 +1906,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTotalsTest -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:18Z" finished-at="2018-01-16T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
       </class> <!-- testng.ItemsTest -->
       <class name="testng.ReviewsTest">
-        <test-method status="PASS" signature="getItemInfoTest(java.lang.String, java.lang.String, del.res.models.Item)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getItemInfoTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getItemInfo" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getItemInfoTest(java.lang.String, java.lang.String, del.res.models.Item)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getItemInfoTest" duration-ms="27" started-at="2018-01-16T10:32:19Z" data-provider="getItemInfo" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1937,15 +1937,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getItemInfoTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getPastReviewsTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getPastReviewsTest" duration-ms="32" started-at="2018-01-16T10:02:55Z" data-provider="getPastReviews" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="getPastReviewsTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getPastReviewsTest" duration-ms="29" started-at="2018-01-16T10:32:19Z" data-provider="getPastReviews" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -1966,11 +1966,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPastReviewsTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="submitReviewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="submitReviewTest" duration-ms="28" started-at="2018-01-16T10:02:55Z" data-provider="submitReview" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="submitReviewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="submitReviewTest" duration-ms="25" started-at="2018-01-16T10:32:19Z" data-provider="submitReview" finished-at="2018-01-16T10:32:19Z">
           <params>
             <param index="0">
               <value>
@@ -2001,27 +2005,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitReviewTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="60" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="23" started-at="2018-01-16T10:32:19Z" finished-at="2018-01-16T10:32:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.ReviewsTest -->
     </test> <!-- Regular User Tests -->
-    <test name="Administrative User Tests" duration-ms="449" started-at="2018-01-16T15:02:56Z" finished-at="2018-01-16T15:02:57Z">
+    <test name="Administrative User Tests" duration-ms="531" started-at="2018-01-16T15:32:20Z" finished-at="2018-01-16T15:32:20Z">
       <class name="testng.StoresTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="createStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="createStoreTest" duration-ms="25" started-at="2018-01-16T10:02:57Z" data-provider="createStore" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="createStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="createStoreTest" duration-ms="27" started-at="2018-01-16T10:32:20Z" data-provider="createStore" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2042,11 +2042,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createStoreTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="24" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="27" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" duration-ms="39" started-at="2018-01-16T10:02:57Z" data-provider="updateStore" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" duration-ms="55" started-at="2018-01-16T10:32:20Z" data-provider="updateStore" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2067,17 +2067,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateStoreTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="15" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="24" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.StoresTest -->
       <class name="testng.ItemsTest">
-        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="15" started-at="2018-01-16T10:02:56Z" data-provider="addItem" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="25" started-at="2018-01-16T10:32:20Z" data-provider="addItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2098,15 +2098,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="32" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="22" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="22" started-at="2018-01-16T10:02:56Z" data-provider="addItem" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="21" started-at="2018-01-16T10:32:20Z" data-provider="addItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2127,11 +2127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="17" started-at="2018-01-16T10:02:57Z" data-provider="addItem" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="23" started-at="2018-01-16T10:32:20Z" data-provider="addItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2152,27 +2152,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="getAllItemsTest()[pri:0, instance:testng.ItemsTest@3632be31]" name="getAllItemsTest" duration-ms="19" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="getAllItemsTest()[pri:0, instance:testng.ItemsTest@3632be31]" name="getAllItemsTest" duration-ms="23" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllItemsTest -->
-        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="58" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="54" started-at="2018-01-16T10:32:20Z" data-provider="updateItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2193,19 +2197,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateItemTest -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="31" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="33" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="38" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="59" started-at="2018-01-16T10:32:20Z" data-provider="updateItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2226,11 +2226,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateItemTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="46" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="58" started-at="2018-01-16T10:32:20Z" data-provider="updateItem" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2251,39 +2255,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateItemTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
       </class> <!-- testng.ItemsTest -->
       <class name="testng.OrdersTest">
-        <test-method status="PASS" signature="getAllOrdersTest()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="getAllOrdersTest" duration-ms="25" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="getAllOrdersTest()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="getAllOrdersTest" duration-ms="29" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllOrdersTest -->
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testng.OrdersTest -->
       <class name="testng.ReviewsTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@2286778]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@2286778]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="getReviewsByUserTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@2286778]" name="getReviewsByUserTest" duration-ms="37" started-at="2018-01-16T10:02:57Z" data-provider="getReviewsByUser" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="getReviewsByUserTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@2286778]" name="getReviewsByUserTest" duration-ms="40" started-at="2018-01-16T10:32:20Z" data-provider="getReviewsByUser" finished-at="2018-01-16T10:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -2304,7 +2304,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReviewsByUserTest -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@2286778]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@2286778]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:32:20Z" finished-at="2018-01-16T10:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
