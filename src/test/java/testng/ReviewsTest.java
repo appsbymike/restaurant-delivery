@@ -33,7 +33,7 @@ public class ReviewsTest {
 	boolean createdReview;
 	ReviewsBO reviewsBO;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		reviewsBO = new ReviewsBO();
 		createdReviewID = 0;
@@ -60,7 +60,7 @@ public class ReviewsTest {
 		}
 		return params.iterator();
 	}
-	@Test(dataProvider="submitReview")
+	@Test(dataProvider="submitReview", groups= {"functest", "usertest"})
 	public void submitReviewTest(String desc, String userID, String itemID, String text, boolean expected) {
 		createdReviewID = reviewsBO.submitReview(userID, itemID, text);
 		boolean result = (createdReviewID != 0);
@@ -99,7 +99,7 @@ public class ReviewsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getItemInfo")
+	@Test(dataProvider="getItemInfo", groups= {"functest", "usertest"})
 	public void getItemInfoTest(String desc, String itemID, Item expected) {
 		Item result = reviewsBO.getItemInfo(itemID);
 		assertThat(result, samePropertyValuesAs(expected));
@@ -125,7 +125,7 @@ public class ReviewsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getPastReviews")
+	@Test(dataProvider="getPastReviews", groups= {"functest", "usertest"})
 	public void getPastReviewsTest(String desc, String itemID, boolean expected) {
 		ArrayList<PastReview> result = reviewsBO.getPastReviews(itemID);
 		if(!expected) {
@@ -158,7 +158,7 @@ public class ReviewsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getReviewsByUser")
+	@Test(dataProvider="getReviewsByUser", groups= {"functest", "admintest"})
 	public void getReviewsByUserTest(String desc, String userID, boolean expected) {
 		ArrayList<PastReview> result = reviewsBO.getReviewsByUser(userID);
 		if(!expected) {
@@ -169,7 +169,7 @@ public class ReviewsTest {
 		}
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void after() {
 		if(createdReview) {
 			reviewsBO.deleteReview(Integer.toString(createdReviewID));

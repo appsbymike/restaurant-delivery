@@ -1,3 +1,3 @@
 description,orderID,expected
-Valid,2,TRUE
+Valid,7,TRUE
 Has no items,29,FALSE

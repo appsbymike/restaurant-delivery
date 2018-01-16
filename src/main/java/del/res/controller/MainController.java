@@ -15,9 +15,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import del.res.bo.ItemsBO;
 import del.res.bo.OrdersBO;
+import del.res.bo.ReviewsBO;
 import del.res.bo.StoresBO;
-import del.res.dao.ReviewsDAO;
-import del.res.dao.UsersDAO;
+import del.res.bo.UsersBO;
 import del.res.models.User;
 import del.res.models.Item;
 import del.res.models.PastReview;
@@ -43,8 +43,8 @@ public class MainController {
 	@RequestMapping(value="adminUserList", method=RequestMethod.GET)
 	public ModelAndView adminUserList() {
 		ModelAndView model = new ModelAndView("adminUserList");
-		UsersDAO usersDAO = new UsersDAO();
-		ArrayList<User> users = usersDAO.getNormalUsers();
+		UsersBO usersBO = new UsersBO();
+		ArrayList<User> users = usersBO.getNormalUsers();
 		model.addObject("users",users);
 		return model;
 	}
@@ -56,15 +56,15 @@ public class MainController {
 		
 		ModelAndView model;
 		if(userID != null) {
-			UsersDAO usersDAO = new UsersDAO();
+			UsersBO usersBO = new UsersBO();
 			//Get the user info, make sure repassword are userid are set
-			User info = usersDAO.getDetails(userID);
+			User info = usersBO.getDetails(userID);
 			info.setRepassword(info.getPassword());
 			info.setId(userID);
 			
 			//Get reviews by this user
-			ReviewsDAO reviewsDAO = new ReviewsDAO();
-			ArrayList<PastReview> reviews = reviewsDAO.getReviewsByUser(userID);
+			ReviewsBO reviewsBO = new ReviewsBO();
+			ArrayList<PastReview> reviews = reviewsBO.getReviewsByUser(userID);
 			
 			//Pass user info to the forms in the view
 			model = new ModelAndView("adminGetUser","command",info);
@@ -85,13 +85,13 @@ public class MainController {
 			@RequestParam(value="review_id",required=false) String reviewID) {
 		
 		ModelAndView model;
-		ReviewsDAO reviewsDAO = new ReviewsDAO();
+		ReviewsBO reviewsBO = new ReviewsBO();
 		
 		if(info.getId() != null) {
 			//Check if user is deleting a review
 			if(reviewID != null) {
 				//Delete review based on userID
-				reviewsDAO.deleteReview(reviewID);
+				reviewsBO.deleteReview(reviewID);
 				//Call the regular GetUser method to easily load user's info
 				model = adminGetUser(info.getId());
 				//Add attribute to show view that delete was successful
@@ -115,8 +115,8 @@ public class MainController {
 					//Validate password is same as repassword
 					if(password.equals(repassword)) {
 						//Update the user
-						UsersDAO usersDAO = new UsersDAO();
-						usersDAO.updateUser(info);
+						UsersBO usersBO = new UsersBO();
+						usersBO.updateUser(info);
 						//Add attribute to show view that update was successful
 						model = new ModelAndView("redirect:/admin/adminUserList");
 //						model.addObject("success", true);
@@ -134,7 +134,7 @@ public class MainController {
 				}
 				
 				//Pass the user reviews as an object to the view if regular GetUser method isn't being used
-				ArrayList<PastReview> reviews = reviewsDAO.getReviewsByUser(info.getId());
+				ArrayList<PastReview> reviews = reviewsBO.getReviewsByUser(info.getId());
 				model.addObject("reviews",reviews);
 				
 			}
@@ -400,8 +400,8 @@ public class MainController {
 		String userID = (String) session.getAttribute("user_id");
 		if(userID != null) {
 			//Get admin's info with their ID
-			UsersDAO usersDAO = new UsersDAO();
-			User info = usersDAO.getDetails(userID);
+			UsersBO usersBO = new UsersBO();
+			User info = usersBO.getDetails(userID);
 			//Make sure repassword is set
 			info.setRepassword(info.getPassword());
 			//Pass admin's info to the view's form
@@ -448,8 +448,8 @@ public class MainController {
 				//Validate that password and repassword are the same
 				if(password.equals(repassword)) {
 					//Update admin's info
-					UsersDAO usersDAO = new UsersDAO();
-					usersDAO.updateUser(info);
+					UsersBO usersBO = new UsersBO();
+					usersBO.updateUser(info);
 					//Add attribute to show view that update was successful
 					model.addObject("success", true);
 				}

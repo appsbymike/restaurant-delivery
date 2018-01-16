@@ -6,6 +6,7 @@ import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -56,5 +57,23 @@ public class AdminItemsPageSteps {
 		WebElement update = MyWebDriver.driver.findElement(By.name("update"));
 		MyWebDriver.scrollTo(update);
 		update.click();
+	}
+	
+	@Then("^User sees Edit button for each Item$")
+	public void user_sees_Edit_button_for_each_Item() throws Throwable {
+		for(WebElement el : MyWebDriver.driver.findElements(By.id("existingItem"))) {
+			if(!el.findElement(By.name("update")).isDisplayed()){
+				Assert.fail("Edit button not found for: " + el.findElement(By.id("name")).getText());
+			}
+		}
+	}
+
+	@Then("^User sees Delete button for each Item$")
+	public void user_sees_Delete_button_for_each_Item() throws Throwable {
+		for(WebElement el : MyWebDriver.driver.findElements(By.id("existingItem"))) {
+			if(!el.findElement(By.name("delete")).isDisplayed()){
+				Assert.fail("Delete button not found for: " + el.findElement(By.id("name")).getText());
+			}
+		}
 	}
 }

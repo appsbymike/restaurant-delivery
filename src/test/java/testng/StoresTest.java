@@ -31,7 +31,7 @@ public class StoresTest {
 	boolean updatedStore;
 	Store oldStore;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		storesBO = new StoresBO();
 		createdStore = false;
@@ -43,7 +43,7 @@ public class StoresTest {
 	//getAllStores()
 	//Takes: nothing
 	//Returns: (ArrayList<Store>) all stores in database
-	@Test
+	@Test(groups= {"functest", "usertest"})
 	public void getAllStoresTest() {
 		ArrayList<Store> result = storesBO.getAllStores();
 		assertThat(result, Every.everyItem(IsInstanceOf.instanceOf(Store.class)));
@@ -81,7 +81,7 @@ public class StoresTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="updateStore")
+	@Test(dataProvider="updateStore", groups= {"functest", "admintest"})
 	public void updateStoreTest(String desc, Store props, boolean expected) {
 		oldStore = storesBO.getStoreByID(props.getStoreID());
 		boolean result = storesBO.updateStore(props);
@@ -119,7 +119,7 @@ public class StoresTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="createStore")
+	@Test(dataProvider="createStore", groups= {"functest", "admintest"})
 	public void createStoreTest(String desc, Store props, boolean expected) {
 		createdStoreID = storesBO.createStore(props);
 		boolean result = (createdStoreID != 0);
@@ -127,7 +127,7 @@ public class StoresTest {
 		assertThat(result,equalTo(expected));
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void after() {
 		if(updatedStore) {
 			storesBO.updateStore(oldStore);

@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  Administrative User Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Administrative User Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 16 10:02:56 EST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (449 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>admintest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng.ItemsTest.addItemTest()'><b>addItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Valid info, [Plainer Pizza, Testaroo, 3.5, Images/ayy.png, 1, Pizza], true</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.ItemsTest.addItemTest()'><b>addItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Price not a number, [Plainer Pizza, Testaroo, Tree Fiddy, Images/ayy.png, 1, Pizza], false</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.ItemsTest.addItemTest()'><b>addItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Active not a number, [Plainer Pizza, Testaroo, 3.5, Images/ayy.png, yes, Pizza], false</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.StoresTest.createStoreTest()'><b>createStoreTest</b><br>Test class: testng.StoresTest<br>Parameters: Valid, del.res.models.Store@6853425f, true</td>
+<td></td>
+<td>0</td>
+<td>testng.StoresTest@4e9ba398</td></tr>
+<tr>
+<td title='testng.ItemsTest.getAllItemsTest()'><b>getAllItemsTest</b><br>Test class: testng.ItemsTest</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.OrdersTest.getAllOrdersTest()'><b>getAllOrdersTest</b><br>Test class: testng.OrdersTest</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@5abca1e0</td></tr>
+<tr>
+<td title='testng.ReviewsTest.getReviewsByUserTest()'><b>getReviewsByUserTest</b><br>Test class: testng.ReviewsTest<br>Parameters: Valid, 5, true</td>
+<td></td>
+<td>0</td>
+<td>testng.ReviewsTest@2286778</td></tr>
+<tr>
+<td title='testng.ItemsTest.updateItemTest()'><b>updateItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Valid info, [Plain Pizza, Testaroo, 3.5, Images/ayy.png, 1, Pizza, 1], true</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.ItemsTest.updateItemTest()'><b>updateItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Price not a number, [Plain Pizza, Testaroo, Tree Fiddy, Images/ayy.png, 1, Pizza, 1], false</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.ItemsTest.updateItemTest()'><b>updateItemTest</b><br>Test class: testng.ItemsTest<br>Parameters: Active not a number, [Plain Pizza, Testaroo, 3.5, Images/ayy.png, yes, Pizza, 1], false</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@3632be31</td></tr>
+<tr>
+<td title='testng.StoresTest.updateStoreTest()'><b>updateStoreTest</b><br>Test class: testng.StoresTest<br>Parameters: Valid, del.res.models.Store@258d79be, true</td>
+<td></td>
+<td>0</td>
+<td>testng.StoresTest@4e9ba398</td></tr>
+</table><p>
+</body>
+</html>

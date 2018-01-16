@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import del.res.dao.UsersDAO;
+import del.res.bo.UsersBO;
 import del.res.utilities.Validator;
 
 @WebServlet("/Register")
@@ -21,7 +21,7 @@ public class Register extends HttpServlet {
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		UsersDAO usersDAO = new UsersDAO();
+		UsersBO usersBO = new UsersBO();
 		
 		
 		if(request.getParameter("cancel") != null){
@@ -44,8 +44,8 @@ public class Register extends HttpServlet {
 			if(v.isValidRegistration(username, password, repassword, firstname, lastname, gender, address, phone, email)) {
 				if(password.equals(repassword)){
 					try {
-						if(usersDAO.registerQuery(username) == false){
-							usersDAO.createUser(username,password,firstname,lastname,gender,address,phone,email);
+						if(usersBO.registerQuery(username) == false){
+							usersBO.createUser(username,password,firstname,lastname,gender,address,phone,email);
 							response.sendRedirect(request.getContextPath() + "/Login.jsp");
 						}
 						else{

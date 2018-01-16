@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import del.res.dao.ReviewsDAO;
+import del.res.bo.ReviewsBO;
 import del.res.utilities.Validator;
 
 /**
@@ -27,7 +27,7 @@ public class SubmitReview extends HttpServlet {
     }
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ReviewsDAO reviewsDAO = new ReviewsDAO();
+		ReviewsBO reviewsBO = new ReviewsBO();
 		HttpSession session = request.getSession();
 		if(request.getParameter("review") != null) {
 			String userID = (String) session.getAttribute("user_id");
@@ -35,7 +35,7 @@ public class SubmitReview extends HttpServlet {
 			String reviewText = request.getParameter("reviewText");
 			Validator v = new Validator();
 			if(v.isValidReview(reviewText)) {
-				reviewsDAO.submitReview(userID, itemID, reviewText);
+				reviewsBO.submitReview(userID, itemID, reviewText);
 				response.sendRedirect(request.getContextPath() + "/SingleItem.jsp?item_id=" + itemID + "&submit=true");
 			}
 			else {

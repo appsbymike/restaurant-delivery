@@ -28,7 +28,7 @@ public class ReceiptsTest {
 	
 	ReceiptsBO receiptsBO;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		receiptsBO = new ReceiptsBO();
 	}
@@ -66,7 +66,7 @@ public class ReceiptsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getReceiptSummary")
+	@Test(dataProvider="getReceiptSummary", groups= {"functest", "usertest"})
 	public void getReceiptSummaryTest(String desc, int orderID, ReceiptSummary expected) {
 		ReceiptSummary result = receiptsBO.getReceiptSummary(orderID);
 		assertThat(result, samePropertyValuesAs(expected));
@@ -94,7 +94,7 @@ public class ReceiptsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="validateUser")
+	@Test(dataProvider="validateUser", groups= {"functest", "usertest"})
 	public void validateUserTest(String description, int orderID, int userID, boolean expected) {
 		boolean result = receiptsBO.validateUser(orderID, userID);
 		assertThat(result,equalTo(expected));
@@ -121,7 +121,7 @@ public class ReceiptsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getReceiptItems")
+	@Test(dataProvider="getReceiptItems", groups= {"functest", "usertest"})
 	public void getReceiptItemsTest(String description, int orderID, boolean expected) {
 		ArrayList<Item> result = receiptsBO.getReceiptItems(orderID);
 		if(!expected) {

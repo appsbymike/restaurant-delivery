@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>TestNG:  Regular User Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regular User Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>48/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 16 10:02:54 EST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2498 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>usertest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng.OrdersTest.addItemToOrderTest()'><b>addItemToOrderTest</b><br>Test class: testng.OrdersTest<br>Parameters: Valid, 29, 1, true</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.addItemToOrderTest()'><b>addItemToOrderTest</b><br>Test class: testng.OrdersTest<br>Parameters: Invalid Item, 29, 3, false</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.addItemToOrderTest()'><b>addItemToOrderTest</b><br>Test class: testng.OrdersTest<br>Parameters: Invalid Order, 40, 1, false</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.addItemToOrderTest()'><b>addItemToOrderTest</b><br>Test class: testng.OrdersTest<br>Parameters: Item in Order Already, 2, 1, false</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.createOrderTest()'><b>createOrderTest</b><br>Test class: testng.OrdersTest<br>Parameters: Valid, 1, 1, 1111111111, 1234, 11111, 11.11, 1, true</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Valid credentials; user created, mike2, mike, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 1</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Username, too long, aaaaaaaaaaaaaaaaaaaaa, mike, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Password too long, mike4, aaaaaaaaaaaaaaaaaaaaa, Mike, Mike, m, 23 Mars Place, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Firstname too long, mike5, mike, aaaaaaaaaaaaaaaaaaaaa, Mike, m, 24 Mars Place, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Lastname too long, mike6, mike, Mike, aaaaaaaaaaaaaaaaaaaaa, m, 25 Mars Place, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Gender more than 1 char, mike7, mike, Mike, Mike, mm, 26 Mars Place, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Address too long, mike8, mike, Mike, Mike, m, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, 1234567890, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Phone non-numeric, mike9, mike, Mike, Mike, m, 23 Mars Place, abcdefghij, mike@mike.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.createUserTest()'><b>createUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Email too long, mike10, mike, Mike, Mike, m, 23 Mars Place, 23 Mars Place, aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.ItemsTest.getAllActiveItemsTest()'><b>getAllActiveItemsTest</b><br>Test class: testng.ItemsTest</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@4b952a2d</td></tr>
+<tr>
+<td title='testng.StoresTest.getAllStoresTest()'><b>getAllStoresTest</b><br>Test class: testng.StoresTest</td>
+<td></td>
+<td>0</td>
+<td>testng.StoresTest@29ca901e</td></tr>
+<tr>
+<td title='testng.UsersTest.getDetailsTest()'><b>getDetailsTest</b><br>Test class: testng.UsersTest<br>Parameters: Valid ID, 3, mike</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.getDetailsTest()'><b>getDetailsTest</b><br>Test class: testng.UsersTest<br>Parameters: Invalid ID, 4000, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.getDetailsTest()'><b>getDetailsTest</b><br>Test class: testng.UsersTest<br>Parameters: ID contains non-numeric chars, abc, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.ReviewsTest.getItemInfoTest()'><b>getItemInfoTest</b><br>Test class: testng.ReviewsTest<br>Parameters: Valid, 1, del.res.models.Item@2dc9b0f5</td>
+<td></td>
+<td>0</td>
+<td>testng.ReviewsTest@4bec1f0c</td></tr>
+<tr>
+<td title='testng.ItemsTest.getItemsCountTest()'><b>getItemsCountTest</b><br>Test class: testng.ItemsTest</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@4b952a2d</td></tr>
+<tr>
+<td title='testng.OrdersTest.getOrdersByUserTest()'><b>getOrdersByUserTest</b><br>Test class: testng.OrdersTest<br>Parameters: Valid, 3, true</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.getOrdersByUserTest()'><b>getOrdersByUserTest</b><br>Test class: testng.OrdersTest<br>Parameters: User didn’t make order, 2, false</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.OrdersTest.getOrdersByUserTest()'><b>getOrdersByUserTest</b><br>Test class: testng.OrdersTest<br>Parameters: Users doesn’t exist, 40, false</td>
+<td></td>
+<td>0</td>
+<td>testng.OrdersTest@3159c4b8</td></tr>
+<tr>
+<td title='testng.ReviewsTest.getPastReviewsTest()'><b>getPastReviewsTest</b><br>Test class: testng.ReviewsTest<br>Parameters: Valid, 1, true</td>
+<td></td>
+<td>0</td>
+<td>testng.ReviewsTest@4bec1f0c</td></tr>
+<tr>
+<td title='testng.ReceiptsTest.getReceiptItemsTest()'><b>getReceiptItemsTest</b><br>Test class: testng.ReceiptsTest<br>Parameters: Valid, 7, true</td>
+<td></td>
+<td>0</td>
+<td>testng.ReceiptsTest@73846619</td></tr>
+<tr>
+<td title='testng.ReceiptsTest.getReceiptItemsTest()'><b>getReceiptItemsTest</b><br>Test class: testng.ReceiptsTest<br>Parameters: Has no items, 29, false</td>
+<td></td>
+<td>0</td>
+<td>testng.ReceiptsTest@73846619</td></tr>
+<tr>
+<td title='testng.ReceiptsTest.getReceiptSummaryTest()'><b>getReceiptSummaryTest</b><br>Test class: testng.ReceiptsTest<br>Parameters: Valid, 7, del.res.models.ReceiptSummary@1e13529a</td>
+<td></td>
+<td>0</td>
+<td>testng.ReceiptsTest@73846619</td></tr>
+<tr>
+<td title='testng.ItemsTest.getTotalsTest()'><b>getTotalsTest</b><br>Test class: testng.ItemsTest<br>Parameters: Valid, [1, 2], 29.5</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@4b952a2d</td></tr>
+<tr>
+<td title='testng.ItemsTest.getTotalsTest()'><b>getTotalsTest</b><br>Test class: testng.ItemsTest<br>Parameters: Invalid ID, [8, 1], 13.5</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@4b952a2d</td></tr>
+<tr>
+<td title='testng.ItemsTest.getTotalsTest()'><b>getTotalsTest</b><br>Test class: testng.ItemsTest<br>Parameters: All Invalid, [8, 9], 0.0</td>
+<td></td>
+<td>0</td>
+<td>testng.ItemsTest@4b952a2d</td></tr>
+<tr>
+<td title='testng.UsersTest.loginQueryTest()'><b>loginQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Valid Normal Login Creds, mike, mike, 3</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.loginQueryTest()'><b>loginQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Invalid username, abcd1234, mike, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.loginQueryTest()'><b>loginQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Invalid password, mike, abcd1234, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.loginQueryTest()'><b>loginQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Invalid username (too long), abcdefghijklmnopqrstuvwxyz, mike, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.loginQueryTest()'><b>loginQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Invalid password (too long), mike, abcdefghijklmnopqrstuvwxyz, null</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.registerQueryTest()'><b>registerQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Username Exists, mike, true</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.registerQueryTest()'><b>registerQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Username Doesn't Exist, mike9001, false</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.registerQueryTest()'><b>registerQueryTest</b><br>Test class: testng.UsersTest<br>Parameters: Username Too Long, aaaaaaaaaaaaaaaaaaaaa, false</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.ReviewsTest.submitReviewTest()'><b>submitReviewTest</b><br>Test class: testng.ReviewsTest<br>Parameters: Valid, 1, 1, Pretty Good, true</td>
+<td></td>
+<td>0</td>
+<td>testng.ReviewsTest@4bec1f0c</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Valid credentials; user updated, test, Mike, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 1</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Password too long, aaaaaaaaaaaaaaaaaaaaa, Mike, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Firstname too long, test, aaaaaaaaaaaaaaaaaaaaa, Mike, 23 Mars Place, 1234567890, mike@mike.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Lastname too long, test, Mike, aaaaaaaaaaaaaaaaaaaaa, 23 Mars Place, 1234567890, mike@mike.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Address too long, test, Mike, Mike, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, 1234567890, mike@mike.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Phone non-numeric, test, Mike, Mike, 23 Mars Place, abcdefghij, mike@mike.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.UsersTest.updateUserTest()'><b>updateUserTest</b><br>Test class: testng.UsersTest<br>Parameters: Email too long, test, Mike, Mike, 23 Mars Place, 23 Mars Place, aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>testng.UsersTest@5649fd9b</td></tr>
+<tr>
+<td title='testng.ReceiptsTest.validateUserTest()'><b>validateUserTest</b><br>Test class: testng.ReceiptsTest<br>Parameters: Valid, 7, 5, true</td>
+<td></td>
+<td>0</td>
+<td>testng.ReceiptsTest@73846619</td></tr>
+</table><p>
+</body>
+</html>

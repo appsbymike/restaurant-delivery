@@ -33,7 +33,7 @@ public class OrdersTest {
 	int orderitemOrderID;
 	int orderitemItemID;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		ordersBO = new OrdersBO();
 		orderCreated = false;
@@ -71,7 +71,7 @@ public class OrdersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider = "createOrder")
+	@Test(dataProvider = "createOrder", groups= {"functest", "usertest"})
 	public void createOrderTest(String description, String user_id, String store_id, String cc_number, String sec_number, String zipcode, String pretax_revenue, String tax_revenue, boolean expected) {
 		int orderID = ordersBO.createOrder(user_id, store_id, cc_number, sec_number, zipcode, pretax_revenue, tax_revenue);
 		boolean result = (orderID != 0);
@@ -105,7 +105,7 @@ public class OrdersTest {
 		return params.iterator();
 	}	
 	
-	@Test(dataProvider="addItemToOrder")
+	@Test(dataProvider="addItemToOrder", groups= {"functest", "usertest"})
 	public void addItemToOrderTest(String description, int orderID, int itemID, boolean expected) {
 		boolean result;
 		try {
@@ -141,7 +141,7 @@ public class OrdersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getOrdersByUser")
+	@Test(dataProvider="getOrdersByUser", groups= {"functest", "usertest"})
 	public void getOrdersByUserTest(String description, int userID, boolean expected) {
 		try {
 			System.out.println(expected);
@@ -166,13 +166,13 @@ public class OrdersTest {
 	//Takes: nothing
 	//Returns: (ArrayList<ReceiptSummary>) Summaries of all order made by all users
 	
-	@Test
+	@Test(groups= {"functest", "admintest"})
 	public void getAllOrdersTest() {
 		ArrayList<ReceiptSummary> result = ordersBO.getAllOrders();
 		assertThat(result,IsNot.not(IsEmptyCollection.emptyCollectionOf(ReceiptSummary.class)));
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void after() {
 		if(orderCreated) {
 			ordersBO.deleteOrder(createdOrderID);

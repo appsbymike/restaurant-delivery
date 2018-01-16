@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import del.res.dao.UsersDAO;
+import del.res.bo.UsersBO;
 import del.res.models.User;
 import del.res.utilities.Validator;
 
@@ -33,11 +33,11 @@ public class UpdateAccount extends HttpServlet {
     	HttpSession session = request.getSession();
     	if(session.getAttribute("user_id") != null) {
     		String successPage = "/AccountDetails.jsp";
-        	UsersDAO usersDAO = new UsersDAO();
+        	UsersBO usersBO = new UsersBO();
     		//Grab userID and make sure it's not null
     		String userID = (String) request.getSession().getAttribute("user_id");
     		//Grab the user details and attach to request as an attribute
-    		User user_info = usersDAO.getDetails(userID);
+    		User user_info = usersBO.getDetails(userID);
     		if(user_info != null) {
     			request.setAttribute("user_info", user_info);
             	//Forward to successPage
@@ -76,9 +76,9 @@ public class UpdateAccount extends HttpServlet {
 					//Store info in model
 					User info = new User(firstname,lastname,password,address,phone,email);
 					info.setId(userID);
-					UsersDAO UsersDAO = new UsersDAO();
+					UsersBO UsersBO = new UsersBO();
 					//Update user with info in model
-					UsersDAO.updateUser(info);
+					UsersBO.updateUser(info);
 					successPage = "/AccountDetails.jsp?success=true";
 				}
 				else {
@@ -89,9 +89,9 @@ public class UpdateAccount extends HttpServlet {
 				successPage = "/AccountDetails.jsp?invalidformat=true";
 			}
 			
-			UsersDAO usersDAO = new UsersDAO();
+			UsersBO usersBO = new UsersBO();
 	    	//Grab the user details and attach to request as an attribute
-	    	User user_info = usersDAO.getDetails(userID);
+	    	User user_info = usersBO.getDetails(userID);
 	    		if(user_info != null) {
 	    			request.setAttribute("user_info", user_info);
 	            	//Forward to successPage

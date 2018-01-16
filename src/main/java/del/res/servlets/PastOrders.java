@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import del.res.dao.OrdersDAO;
+import del.res.bo.OrdersBO;
 import del.res.models.PastOrder;
 
 /**
@@ -29,9 +29,9 @@ public class PastOrders extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		String user_id = (String) session.getAttribute("user_id");
-		OrdersDAO ordersDAO = new OrdersDAO();
+		OrdersBO ordersBO = new OrdersBO();
 		if (user_id != null) {
-			ArrayList<PastOrder> orders = ordersDAO.getOrdersByUser(Integer.parseInt(user_id));
+			ArrayList<PastOrder> orders = ordersBO.getOrdersByUser(Integer.parseInt(user_id));
 			request.setAttribute("orders", orders);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/PastOrders.jsp");
 			dispatcher.forward(request, response);

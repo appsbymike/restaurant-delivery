@@ -1,278 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="27" total="86" passed="59">
   <reporter-output>
-    <line>
-      <![CDATA[Testing CASE01: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Testing CASE02: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Testing CASE03: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Testing CASE04: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Testing CASE05: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Testing CASE06: ]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
-    <line>
-      <![CDATA[Test Passed.]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30149" started-at="2018-01-08T19:45:31Z" finished-at="2018-01-08T19:46:01Z">
+  <suite name="Unit Tests" duration-ms="3000" started-at="2018-01-16T15:02:54Z" finished-at="2018-01-16T15:02:57Z">
     <groups>
+      <group name="usertest">
+        <method signature="ItemsTest.getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getItemsCountTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getItemsCountTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" class="testng.ItemsTest"/>
+        <method signature="OrdersTest.addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" class="testng.OrdersTest"/>
+        <method signature="OrdersTest.createOrderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="createOrderTest" class="testng.OrdersTest"/>
+        <method signature="OrdersTest.getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" class="testng.OrdersTest"/>
+        <method signature="ReceiptsTest.getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" class="testng.ReceiptsTest"/>
+        <method signature="ReceiptsTest.getReceiptSummaryTest(java.lang.String, int, del.res.models.ReceiptSummary)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptSummaryTest" class="testng.ReceiptsTest"/>
+        <method signature="ReceiptsTest.validateUserTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="validateUserTest" class="testng.ReceiptsTest"/>
+        <method signature="ReviewsTest.getItemInfoTest(java.lang.String, java.lang.String, del.res.models.Item)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getItemInfoTest" class="testng.ReviewsTest"/>
+        <method signature="ReviewsTest.getPastReviewsTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getPastReviewsTest" class="testng.ReviewsTest"/>
+        <method signature="ReviewsTest.submitReviewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="submitReviewTest" class="testng.ReviewsTest"/>
+        <method signature="StoresTest.getAllStoresTest()[pri:0, instance:testng.StoresTest@29ca901e]" name="getAllStoresTest" class="testng.StoresTest"/>
+        <method signature="UsersTest.createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" class="testng.UsersTest"/>
+      </group> <!-- usertest -->
+      <group name="functest">
+        <method signature="ItemsTest.getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getItemsCountTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getItemsCountTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" class="testng.ItemsTest"/>
+        <method signature="OrdersTest.addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" class="testng.OrdersTest"/>
+        <method signature="OrdersTest.createOrderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="createOrderTest" class="testng.OrdersTest"/>
+        <method signature="OrdersTest.getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" class="testng.OrdersTest"/>
+        <method signature="ReceiptsTest.getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" class="testng.ReceiptsTest"/>
+        <method signature="ReceiptsTest.getReceiptSummaryTest(java.lang.String, int, del.res.models.ReceiptSummary)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptSummaryTest" class="testng.ReceiptsTest"/>
+        <method signature="ReceiptsTest.validateUserTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="validateUserTest" class="testng.ReceiptsTest"/>
+        <method signature="ReviewsTest.getItemInfoTest(java.lang.String, java.lang.String, del.res.models.Item)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getItemInfoTest" class="testng.ReviewsTest"/>
+        <method signature="ReviewsTest.getPastReviewsTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getPastReviewsTest" class="testng.ReviewsTest"/>
+        <method signature="ReviewsTest.submitReviewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="submitReviewTest" class="testng.ReviewsTest"/>
+        <method signature="StoresTest.getAllStoresTest()[pri:0, instance:testng.StoresTest@29ca901e]" name="getAllStoresTest" class="testng.StoresTest"/>
+        <method signature="UsersTest.createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" class="testng.UsersTest"/>
+        <method signature="UsersTest.updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" class="testng.UsersTest"/>
+        <method signature="ItemsTest.addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getAllItemsTest()[pri:0, instance:testng.ItemsTest@3632be31]" name="getAllItemsTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" class="testng.ItemsTest"/>
+        <method signature="OrdersTest.getAllOrdersTest()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="getAllOrdersTest" class="testng.OrdersTest"/>
+        <method signature="ReviewsTest.getReviewsByUserTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@2286778]" name="getReviewsByUserTest" class="testng.ReviewsTest"/>
+        <method signature="StoresTest.createStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="createStoreTest" class="testng.StoresTest"/>
+        <method signature="StoresTest.updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" class="testng.StoresTest"/>
+      </group> <!-- functest -->
+      <group name="admintest">
+        <method signature="ItemsTest.addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.getAllItemsTest()[pri:0, instance:testng.ItemsTest@3632be31]" name="getAllItemsTest" class="testng.ItemsTest"/>
+        <method signature="ItemsTest.updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" class="testng.ItemsTest"/>
+        <method signature="OrdersTest.getAllOrdersTest()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="getAllOrdersTest" class="testng.OrdersTest"/>
+        <method signature="ReviewsTest.getReviewsByUserTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@2286778]" name="getReviewsByUserTest" class="testng.ReviewsTest"/>
+        <method signature="StoresTest.createStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="createStoreTest" class="testng.StoresTest"/>
+        <method signature="StoresTest.updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" class="testng.StoresTest"/>
+      </group> <!-- admintest -->
     </groups>
-    <test name="Default test" duration-ms="30149" started-at="2018-01-08T19:45:31Z" finished-at="2018-01-08T19:46:01Z">
-      <class name="selenium.LoginPageTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="3638" started-at="2018-01-08T14:45:31Z" finished-at="2018-01-08T14:45:35Z">
+    <test name="Regular User Tests" duration-ms="2498" started-at="2018-01-16T15:02:54Z" finished-at="2018-01-16T15:02:56Z">
+      <class name="testng.StoresTest">
+        <test-method status="PASS" signature="getAllStoresTest()[pri:0, instance:testng.StoresTest@29ca901e]" name="getAllStoresTest" duration-ms="82" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllStoresTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@29ca901e]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="617" started-at="2018-01-08T14:45:35Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CASE01]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["mike]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[mike]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@29ca901e]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE01: ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- invalidField -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="629" started-at="2018-01-08T14:45:35Z" finished-at="2018-01-08T14:45:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE01: ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2808" started-at="2018-01-08T14:45:36Z" finished-at="2018-01-08T14:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="647" started-at="2018-01-08T14:45:39Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:39Z">
+      </class> <!-- testng.StoresTest -->
+      <class name="testng.ReceiptsTest">
+        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CASE02]]>
+                <![CDATA[Valid]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[mike]]>
+                <![CDATA[7]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[$123##123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[invalid]]>
+                <![CDATA[true]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE02: ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- invalidField -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="617" started-at="2018-01-08T14:45:39Z" finished-at="2018-01-08T14:45:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE02: ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2923" started-at="2018-01-08T14:45:40Z" finished-at="2018-01-08T14:45:43Z">
+        </test-method> <!-- getReceiptItemsTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="631" started-at="2018-01-08T14:45:43Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:44Z">
+        <test-method status="PASS" signature="getReceiptItemsTest(java.lang.String, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptItemsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptItems" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CASE03]]>
+                <![CDATA[Has no items]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[29]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[mike]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[missing]]>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE03: ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- invalidField -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="616" started-at="2018-01-08T14:45:44Z" finished-at="2018-01-08T14:45:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE03: ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2792" started-at="2018-01-08T14:45:44Z" finished-at="2018-01-08T14:45:47Z">
+        </test-method> <!-- getReceiptItemsTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="invalidField" duration-ms="617" started-at="2018-01-08T14:45:47Z" data-provider="invalidFieldData" finished-at="2018-01-08T14:45:48Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getReceiptSummaryTest(java.lang.String, int, del.res.models.ReceiptSummary)[pri:0, instance:testng.ReceiptsTest@73846619]" name="getReceiptSummaryTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getReceiptSummary" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CASE04]]>
+                <![CDATA[Valid]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[mike]]>
+                <![CDATA[7]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[missing]]>
+                <![CDATA[del.res.models.ReceiptSummary@1e13529a]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE04: ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- invalidField -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="614" started-at="2018-01-08T14:45:48Z" finished-at="2018-01-08T14:45:48Z">
+        </test-method> <!-- getReceiptSummaryTest -->
+        <test-method status="PASS" signature="validateUserTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.ReceiptsTest@73846619]" name="validateUserTest" duration-ms="22" started-at="2018-01-16T10:02:55Z" data-provider="validateUser" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidField status=SUCCESS method=LoginPageTest.invalidField(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE04: ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2821" started-at="2018-01-08T14:45:48Z" finished-at="2018-01-08T14:45:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="login" duration-ms="669" started-at="2018-01-08T14:45:51Z" data-provider="loginData" finished-at="2018-01-08T14:45:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CASE05]]>
+                <![CDATA[Valid]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[mike]]>
+                <![CDATA[7]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[mike]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="3">
@@ -282,34 +176,686 @@
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE05: ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="807" started-at="2018-01-08T14:45:52Z" finished-at="2018-01-08T14:45:53Z">
+        </test-method> <!-- validateUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReceiptsTest@73846619]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+      </class> <!-- testng.ReceiptsTest -->
+      <class name="testng.UsersTest">
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="61" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE05: ]]]>
+                <![CDATA[Valid credentials; user created]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="3001" started-at="2018-01-08T14:45:53Z" finished-at="2018-01-08T14:45:56Z">
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="login" duration-ms="558" started-at="2018-01-08T14:45:56Z" data-provider="loginData" finished-at="2018-01-08T14:45:56Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="23" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="46" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CASE06]]>
+                <![CDATA[Username, too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="35" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Password too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="46" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[24 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="54" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lastname too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[25 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="48" started-at="2018-01-16T10:02:55Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gender more than 1 char]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mm]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[26 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="59" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Address too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="43" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Phone non-numeric]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[abcdefghij]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="createUserTest" duration-ms="50" started-at="2018-01-16T10:02:56Z" data-provider="createUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Email too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[m]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetailsTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetailsTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="getDetailsTest" duration-ms="40" started-at="2018-01-16T10:02:56Z" data-provider="getDetails" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ID contains non-numeric chars]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetailsTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="13" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Normal Login Creds]]>
               </value>
             </param>
             <param index="1">
@@ -319,7 +865,709 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[dasdsad]]>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginQueryTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="38" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginQueryTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="23" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abcd1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginQueryTest -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="20" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid username (too long)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcdefghijklmnopqrstuvwxyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginQueryTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="loginQueryTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.UsersTest@5649fd9b]" name="loginQueryTest" duration-ms="16" started-at="2018-01-16T10:02:56Z" data-provider="loginQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid password (too long)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abcdefghijklmnopqrstuvwxyz]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginQueryTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="52" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username Exists]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerQueryTest -->
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="22" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username Doesn't Exist]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mike9001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerQueryTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="registerQueryTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.UsersTest@5649fd9b]" name="registerQueryTest" duration-ms="17" started-at="2018-01-16T10:02:56Z" data-provider="registerQuery" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username Too Long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerQueryTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="112" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid credentials; user updated]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="51" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="43" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Password too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="32" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="58" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lastname too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="45" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Address too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="44" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Phone non-numeric]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[abcdefghij]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mike@mike.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)[pri:0, instance:testng.UsersTest@5649fd9b]" name="updateUserTest" duration-ms="31" started-at="2018-01-16T10:02:56Z" data-provider="updateUser" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Email too long]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[23 Mars Place]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaa.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.UsersTest@5649fd9b]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.UsersTest@5649fd9b]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.UsersTest -->
+      <class name="testng.OrdersTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="1" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="17" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToOrderTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="35" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="15" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid Item]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="3">
@@ -329,48 +1577,738 @@
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Testing CASE06: ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="625" started-at="2018-01-08T14:45:56Z" finished-at="2018-01-08T14:45:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login(java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:selenium.LoginPageTest@3f49dace] output=Testing CASE06: ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="before" is-config="true" duration-ms="2967" started-at="2018-01-08T14:45:57Z" finished-at="2018-01-08T14:46:00Z">
+        </test-method> <!-- addItemToOrderTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginAsAdmin()[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="loginAsAdmin" duration-ms="825" started-at="2018-01-08T14:46:00Z" finished-at="2018-01-08T14:46:01Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsAdmin -->
-        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:selenium.LoginPageTest@3f49dace]" name="after" is-config="true" duration-ms="690" started-at="2018-01-08T14:46:01Z" finished-at="2018-01-08T14:46:01Z">
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginAsAdmin status=SUCCESS method=LoginPageTest.loginAsAdmin()[pri:0, instance:selenium.LoginPageTest@3f49dace] output={null}]]]>
+                <![CDATA[Invalid Order]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test Passed.]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- addItemToOrderTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- selenium.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="addItemToOrderTest(java.lang.String, int, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="addItemToOrderTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="addItemToOrder" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Item in Order Already]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToOrderTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createOrderTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="createOrderTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="createOrder" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1111111111]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[11.11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="34" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="19" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrdersByUserTest -->
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="35" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User didn’t make order]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrdersByUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="getOrdersByUserTest(java.lang.String, int, boolean)[pri:0, instance:testng.OrdersTest@3159c4b8]" name="getOrdersByUserTest" duration-ms="16" started-at="2018-01-16T10:02:55Z" data-provider="getOrdersByUser" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Users doesn’t exist]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrdersByUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@3159c4b8]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.OrdersTest -->
+      <class name="testng.ItemsTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getAllActiveItemsTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getAllActiveItemsTest" duration-ms="525" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllActiveItemsTest -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="getItemsCountTest()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getItemsCountTest" duration-ms="31" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getItemsCountTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:54Z" finished-at="2018-01-16T10:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="62" started-at="2018-01-16T10:02:54Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[1, 2]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[29.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTotalsTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[8, 1]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[13.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTotalsTest -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getTotalsTest(java.lang.String, java.util.HashSet, java.lang.Double)[pri:0, instance:testng.ItemsTest@4b952a2d]" name="getTotalsTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getTotals" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[All Invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[8, 9]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTotalsTest -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@4b952a2d]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+      </class> <!-- testng.ItemsTest -->
+      <class name="testng.ReviewsTest">
+        <test-method status="PASS" signature="getItemInfoTest(java.lang.String, java.lang.String, del.res.models.Item)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getItemInfoTest" duration-ms="31" started-at="2018-01-16T10:02:55Z" data-provider="getItemInfo" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[del.res.models.Item@2dc9b0f5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getItemInfoTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getPastReviewsTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="getPastReviewsTest" duration-ms="32" started-at="2018-01-16T10:02:55Z" data-provider="getPastReviews" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPastReviewsTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="submitReviewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="submitReviewTest" duration-ms="28" started-at="2018-01-16T10:02:55Z" data-provider="submitReview" finished-at="2018-01-16T10:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pretty Good]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitReviewTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@4bec1f0c]" name="after" is-config="true" duration-ms="60" started-at="2018-01-16T10:02:55Z" finished-at="2018-01-16T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.ReviewsTest -->
+    </test> <!-- Regular User Tests -->
+    <test name="Administrative User Tests" duration-ms="449" started-at="2018-01-16T15:02:56Z" finished-at="2018-01-16T15:02:57Z">
+      <class name="testng.StoresTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="createStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="createStoreTest" duration-ms="25" started-at="2018-01-16T10:02:57Z" data-provider="createStore" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[del.res.models.Store@6853425f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createStoreTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="24" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="updateStoreTest(java.lang.String, del.res.models.Store, boolean)[pri:0, instance:testng.StoresTest@4e9ba398]" name="updateStoreTest" duration-ms="39" started-at="2018-01-16T10:02:57Z" data-provider="updateStore" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[del.res.models.Store@258d79be]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateStoreTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.StoresTest@4e9ba398]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.StoresTest@4e9ba398]" name="after" is-config="true" duration-ms="15" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.StoresTest -->
+      <class name="testng.ItemsTest">
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="15" started-at="2018-01-16T10:02:56Z" data-provider="addItem" finished-at="2018-01-16T10:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid info]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plainer Pizza, Testaroo, 3.5, Images/ayy.png, 1, Pizza]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="32" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="22" started-at="2018-01-16T10:02:56Z" data-provider="addItem" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price not a number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plainer Pizza, Testaroo, Tree Fiddy, Images/ayy.png, 1, Pizza]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:56Z" finished-at="2018-01-16T10:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="addItemTest" duration-ms="17" started-at="2018-01-16T10:02:57Z" data-provider="addItem" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Active not a number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plainer Pizza, Testaroo, 3.5, Images/ayy.png, yes, Pizza]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="getAllItemsTest()[pri:0, instance:testng.ItemsTest@3632be31]" name="getAllItemsTest" duration-ms="19" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllItemsTest -->
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="58" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid info]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plain Pizza, Testaroo, 3.5, Images/ayy.png, 1, Pizza, 1]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemTest -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="31" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="38" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price not a number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plain Pizza, Testaroo, Tree Fiddy, Images/ayy.png, 1, Pizza, 1]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="updateItemTest(java.lang.String, java.util.ArrayList, boolean)[pri:0, instance:testng.ItemsTest@3632be31]" name="updateItemTest" duration-ms="46" started-at="2018-01-16T10:02:57Z" data-provider="updateItem" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Active not a number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Plain Pizza, Testaroo, 3.5, Images/ayy.png, yes, Pizza, 1]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ItemsTest@3632be31]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="After()[pri:0, instance:testng.ItemsTest@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+      </class> <!-- testng.ItemsTest -->
+      <class name="testng.OrdersTest">
+        <test-method status="PASS" signature="getAllOrdersTest()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="getAllOrdersTest" duration-ms="25" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllOrdersTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.OrdersTest@5abca1e0]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.OrdersTest -->
+      <class name="testng.ReviewsTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testng.ReviewsTest@2286778]" name="before" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getReviewsByUserTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:testng.ReviewsTest@2286778]" name="getReviewsByUserTest" duration-ms="37" started-at="2018-01-16T10:02:57Z" data-provider="getReviewsByUser" finished-at="2018-01-16T10:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReviewsByUserTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testng.ReviewsTest@2286778]" name="after" is-config="true" duration-ms="0" started-at="2018-01-16T10:02:57Z" finished-at="2018-01-16T10:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testng.ReviewsTest -->
+    </test> <!-- Administrative User Tests -->
+  </suite> <!-- Unit Tests -->
 </testng-results>

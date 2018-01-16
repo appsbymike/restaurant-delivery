@@ -30,7 +30,7 @@ public class UsersTest {
 	boolean createdUser;
 	boolean updatedUser;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		usersBO = new UsersBO();
 		thisUsername = "";
@@ -57,7 +57,7 @@ public class UsersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="registerQuery", groups="Registration")
+	@Test(dataProvider="registerQuery", groups= {"functest", "usertest"})
 	public void registerQueryTest(String description, String username, boolean expected) {
 		boolean result = usersBO.registerQuery(username);
 		assertThat(result, equalTo(expected));
@@ -89,7 +89,7 @@ public class UsersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="createUser", groups="Registration")
+	@Test(dataProvider="createUser", groups= {"functest", "usertest"})
 	public void createUserTest(String description, String username, String password, String firstname, String lastname, String gender, String address, String phone, String email, int expected) {
 		int result = usersBO.createUser(username, password, firstname, lastname, gender, address, phone, email);
 		thisUsername = username;
@@ -116,7 +116,7 @@ public class UsersTest {
 		return params.iterator();
 	}
 		
-	@Test(dataProvider="loginQuery", groups="Login")
+	@Test(dataProvider="loginQuery", groups= {"functest", "usertest"})
 	public void loginQueryTest(String description, String username, String password, String expected) {
 		String result = usersBO.loginQuery(username, password);
 		expected = (expected.equals("null") ? null : expected);
@@ -141,7 +141,7 @@ public class UsersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getDetails", groups="UserInfo")
+	@Test(dataProvider="getDetails", groups= {"functest", "usertest"})
 	public void getDetailsTest(String description,String userID,String expected) {
 		try {
 			String result = ((User) usersBO.getDetails(userID)).getFirstname();
@@ -180,7 +180,7 @@ public class UsersTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="updateUser", groups="UserInfo")
+	@Test(dataProvider="updateUser", groups= {"functest", "usertest"})
 	public void updateUserTest(String description, String password, String firstname, String lastname, String address, String phone, String email, String userID, int expected) {
 		try {
 			updatedUser = false;
@@ -210,7 +210,7 @@ public class UsersTest {
 			
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void after() {
 		if(createdUser) {
 			usersBO.deleteUser(thisUsername);

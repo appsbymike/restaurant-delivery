@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="junit">
-  <test thread-count="5" name="UsersTest" junit="true">
-    <classes>
-    	<class name="junit.UsersTest"/>
-    </classes>
-  </test> <!-- UsersTest -->
-</suite> <!-- junit -->
+<suite name="Unit Tests">
+	<test name="Regular User Tests">
+		<groups>
+			<run>
+				<include name="usertest"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="testng"/>
+		</packages>
+	</test>
+	<test name="Administrative User Tests">
+		<groups>
+			<run>
+				<include name="admintest"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="testng"/>
+		</packages>
+	</test>
+</suite> 

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import del.res.dao.UsersDAO;
+import del.res.bo.UsersBO;
 import del.res.utilities.Validator;
 
 /**
@@ -33,7 +33,7 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		UsersDAO usersDAO = new UsersDAO();
+		UsersBO usersBO = new UsersBO();
 		HttpSession session = request.getSession();
 		String context = request.getContextPath();
 		String username = null;
@@ -45,7 +45,7 @@ public class Login extends HttpServlet {
 			Validator v = new Validator();
 			if(v.isValidLogin(username, password)) {
 				try {
-					id = usersDAO.loginQuery(username, password);
+					id = usersBO.loginQuery(username, password);
 					if(id != null) {
 						Enumeration<String> e = session.getAttributeNames();
 						while(e.hasMoreElements()){
@@ -53,7 +53,7 @@ public class Login extends HttpServlet {
 							session.removeAttribute(attribute);
 						}
 						session.setAttribute("user_id", id);
-						if(usersDAO.isAdmin(id)) {
+						if(usersBO.isAdmin(id)) {
 							System.out.println("User is an admin");
 							session.setAttribute("isAdmin",true);
 							response.sendRedirect(context + "/admin/");

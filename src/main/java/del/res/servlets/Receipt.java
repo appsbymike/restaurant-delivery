@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import del.res.dao.ReceiptsDAO;
+import del.res.bo.ReceiptsBO;
 import del.res.models.Item;
 import del.res.models.ReceiptSummary;
 
@@ -26,7 +26,7 @@ public class Receipt extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	ReceiptsDAO receiptsDAO = new ReceiptsDAO();
+    	ReceiptsBO receiptsBO = new ReceiptsBO();
     	HttpSession session = request.getSession();
 		//Check that an order_id was passed
 		if(request.getParameter("order_id") !=null && session.getAttribute("user_id") != null){
@@ -36,12 +36,12 @@ public class Receipt extends HttpServlet {
 				int orderID =  Integer.parseInt(strOrderID);
 				int userID = Integer.parseInt((String) session.getAttribute("user_id"));
 				//Check that the order was made by this user
-				if(receiptsDAO.validateUser(orderID, userID)){
+				if(receiptsBO.validateUser(orderID, userID)){
 					RequestDispatcher dispatcher = request.getRequestDispatcher("/Receipt.jsp");
 					
 					//Grab receiptItems and receiptSummary
-					ArrayList<Item> receiptItems = receiptsDAO.getReceiptItems(orderID);
-					ReceiptSummary receiptSummary = receiptsDAO.getReceiptSummary(orderID);
+					ArrayList<Item> receiptItems = receiptsBO.getReceiptItems(orderID);
+					ReceiptSummary receiptSummary = receiptsBO.getReceiptSummary(orderID);
 					
 					//Add both along with order_id to request attributes
 					request.setAttribute("order_id", orderID);

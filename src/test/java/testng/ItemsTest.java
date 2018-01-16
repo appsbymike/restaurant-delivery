@@ -39,7 +39,7 @@ public class ItemsTest {
 	boolean createdItem;
 	boolean updatedItem;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void before() {
 		itemsBO = new ItemsBO();
 		thisItemID = "";
@@ -54,7 +54,7 @@ public class ItemsTest {
 	//Returns: (ArrayList<Item>) all items where ITEM_ISACTIVE = 1
 	//Datastore: None
 	//Validator: Count of items
-	@Test
+	@Test(groups= {"functest", "usertest"})
 	public void getAllActiveItemsTest() {
 		ArrayList<Item> result = itemsBO.getAllActiveItems();
 		//Check that every item has a property of "itemIsActive" with a value of "1"
@@ -66,7 +66,7 @@ public class ItemsTest {
 	//Returns: (int) count of items
 	//Datastore: None
 	//Validator: Count of items
-	@Test
+	@Test(groups= {"functest", "usertest"})
 	public void getItemsCountTest() {
 		Integer result = itemsBO.getItemsCount();
 		assertThat(result,Matchers.greaterThan(0));
@@ -146,7 +146,7 @@ public class ItemsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="getTotals")
+	@Test(dataProvider="getTotals", groups= {"functest", "usertest"})
 	public void getTotalsTest(String description, HashSet<Integer> cart, Double expected) {
 		ArrayList<Double> result = itemsBO.getTotals(cart);
 		assertThat(result.get(0),IsEqual.equalTo(expected));
@@ -160,7 +160,7 @@ public class ItemsTest {
 	//Returns: (ArrayList<Item>) All <Item>s that exist in the database
 	//Datastore: None
 	//Validator: Count of items
-	@Test
+	@Test(groups= {"functest", "admintest"})
 	public void getAllItemsTest() {
 		ArrayList<Item> result = itemsBO.getAllItems();
 		assertThat(result,Every.everyItem(IsInstanceOf.instanceOf(Item.class)));
@@ -196,7 +196,7 @@ public class ItemsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="updateItem")
+	@Test(dataProvider="updateItem", groups= {"functest", "admintest"})
 	public void updateItemTest(String description, ArrayList<String> props, boolean expected) {
 		//Set up the old item
 		oldItem = itemsBO.getItemByID(props.get(6));
@@ -253,7 +253,7 @@ public class ItemsTest {
 		return params.iterator();
 	}
 	
-	@Test(dataProvider="addItem")
+	@Test(dataProvider="addItem", groups= {"functest", "admintest"})
 	public void addItemTest(String description, ArrayList<String> props, boolean expected) {		
 		//Set up the new item
 		Item item = new Item();
@@ -279,7 +279,7 @@ public class ItemsTest {
 		}
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void After() {
 		if(updatedItem) {
 			System.out.println("Reverted to previous item. Item ID: " + oldItem.getItemID());

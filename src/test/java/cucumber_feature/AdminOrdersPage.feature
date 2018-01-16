@@ -24,7 +24,8 @@ Scenario: Delete Button
 	Then User sees Delete button for each Order
 	
 # Requirement #4: Once clicking on either delete, the admin should be send back to the Admin Order Page
-Scenario: Delete Item
+Scenario: Delete Order
+	Given Sample Order has been Created
 	Given User is on Home Page
 	When User Navigates to Login Page
 	And User enters Valid Admin Credentials
