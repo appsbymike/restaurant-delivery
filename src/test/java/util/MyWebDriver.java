@@ -11,20 +11,21 @@ public class MyWebDriver {
 	public static WebDriver driver;
 	
 	public static void createChromeDriver(String URL) {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
+		//Change this to YOUR driver location
+		String driverLocation = System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driverLocation);
 		
-		//Uncomment to use regular browser
-//		ChromeDriver d = new ChromeDriver();
-		
-		//Comment to use regular browser
 		ChromeOptions o = new ChromeOptions();
+		//Uncomment to use headless browser (no window)
 		o.addArguments("--headless");
+		
 		ChromeDriver d = new ChromeDriver(o);
 		
 		d.get(URL);
 		driver = d;
 	}
 	
+	//Purpose: Scrolls to a given element on the page
 	public static void scrollTo(WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) MyWebDriver.driver);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);

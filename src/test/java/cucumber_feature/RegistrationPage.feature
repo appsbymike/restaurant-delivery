@@ -1,10 +1,12 @@
 Feature: Registration
 
-#Requirement 1 - All fields are mandatory
-Scenario Outline: All fields are mandatory
+Background: User navigated to registration page
 	Given User is on Home Page
 	When User navigates to Registration Page
-	And User forgets to enter credential and fills in <username>,<password>,<repassword>,<firstname>,<lastname>,<address>,<phone> and <email>
+
+#Requirement 1 - All fields are mandatory
+Scenario Outline: All fields are mandatory
+	When User forgets to enter credential and fills in <username>,<password>,<repassword>,<firstname>,<lastname>,<address>,<phone> and <email>
 	Then User sees Missing Credentials Message for <field>
 	
 	Examples:
@@ -20,13 +22,9 @@ Scenario Outline: All fields are mandatory
 
 #Requirement 2 - Page Header says "User Details"
 Scenario: Validate Page Header
-	Given User is on Home Page
-	When User navigates to Registration Page
 	Then User sees Registration Page Header
 
 #Requirement 3 - After register, the user should be sent to the login page
 Scenario: User successfully registers
-	Given User is on Home Page
-	When User navigates to Registration Page
 	When User successfully registers
 	Then User is redirected to Login Page

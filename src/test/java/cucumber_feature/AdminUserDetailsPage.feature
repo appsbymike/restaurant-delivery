@@ -1,14 +1,16 @@
 Feature: Admin View User Details
 
-# Requirement #1: Logout option should be available.
-# Requirement #5: There should be other links that sends the admin to Location list, Order list, Sell items list
-Scenario: Available Buttons
+Background: Admin views a user
 	Given User is on Home Page
 	When User Navigates to Login Page
 	And User enters Valid Admin Credentials
 	When User Navigates to Navigation Panel
 	And User Navigates to User List
 	And User clicks on a User
+
+# Requirement #1: Logout option should be available.
+# Requirement #5: There should be other links that sends the admin to Location list, Order list, Sell items list
+Scenario: Available Buttons
 	Then User sees Logout Button
 	And User sees Location List Button
 	And User Sees Order List Button
@@ -16,12 +18,6 @@ Scenario: Available Buttons
 
 # Requirement #2: All fields are mandatory
 Scenario Outline: Mandatory Fields
-	Given User is on Home Page
-	When User Navigates to Login Page
-	And User enters Valid Admin Credentials
-	When User Navigates to Navigation Panel
-	And User Navigates to User List
-	And User clicks on a User
 	And User enters data <firstname>,<lastname>,<password>,<repassword>,<address>,<phone>,<email>
 	Then User sees empty field message for <field>
 
@@ -37,21 +33,9 @@ Scenario Outline: Mandatory Fields
 	
 # Requirement #3: After clicking update button, admin should be send to the list of users
 Scenario: Update User
-	Given User is on Home Page
-	When User Navigates to Login Page
-	And User enters Valid Admin Credentials
-	When User Navigates to Navigation Panel
-	And User Navigates to User List
-	And User clicks on a User
 	And User updates a User
 	Then User is sent back to User List
 	
 # Requirement #4: All the review that the user has made should be listed in this page
 Scenario: See Reviews
-	Given User is on Home Page
-	When User Navigates to Login Page
-	And User enters Valid Admin Credentials
-	When User Navigates to Navigation Panel
-	And User Navigates to User List
-	And User clicks on a User
 	Then User sees past reviews
